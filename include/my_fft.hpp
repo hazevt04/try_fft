@@ -7,6 +7,9 @@
 
 #include "my_utils.hpp"
 
+// FFT Implementation from:
+// https://www.oreilly.com/library/view/c-cookbook/0596007612/ch11s18.html#cplusplusckbk-CHP-11-EX-33
+
 unsigned int bit_reverse(unsigned int x, int log2n) {
    int n = 0;
    int mask = 0x1;
