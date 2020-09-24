@@ -15,6 +15,11 @@ int main(int argc, char** argv) {
       for (int i = 0; i < 8; ++i)
          std::cout << b[i] << "\n";
 
+      double ct_a[] = {0, 0, 1, 1, 3, 3, 4, 4, 4, 4, 3, 3, 1, 1, 0, 0};
+      ct_fft(ct_a, 8);
+      for (int i = 0; i < 16; ++i)
+         std::cout << ct_a[i] << "\n";
+
       return EXIT_SUCCESS;
 
    } catch (std::exception& ex) {
