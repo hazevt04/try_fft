@@ -1,0 +1,72 @@
+#pragma once
+
+#include <cmath>
+#include <complex>
+#include <iostream>
+#include <iterator>
+
+#include "my_utils.hpp"
+
+// FFT Implementation from C++ Cookbook:
+// https://www.oreilly.com/library/view/c-cookbook/0596007612/ch11s18.html#cplusplusckbk-CHP-11-EX-33
+
+unsigned int bit_reverse(unsigned int x, int log2n) {
+   int n = 0;
+   for (int i = 0; i < log2n; i++) {
+      n <<= 1;
+      n |= (x & 1);
+      x >>= 1;
+   }
+   return n;
+}
+
+constexpr double PI = 3.1415926536;
+
+template <class Iter_T>
+void cookbook_fft(Iter_T a, Iter_T b, int log2n) {
+
+   typedef typename std::iterator_traits<Iter_T>::value_type complex;
+   const complex J(0, 1);
+   int fft_size = 1 << log2n;
+   
+   std::cout << "Number of bits in FFT Size is " << log2n << "\n"; 
+   std::cout << "FFT Size is " << fft_size << "\n"; 
+
+   for (unsigned int i = 0; i < fft_size; ++i) {
+      unsigned int br_index = bit_reverse(i, log2n);
+      std::cout << "\t" << i << " bit reversed is " << br_index << "\n"; 
+      b[br_index] = a[i];
+   }
+
+   for (int s = 1; s <= log2n; ++s) {
+      int m = 1 << s;
+      int m2 = m >> 1;
+
+      std::cout << "\ts = " << s << " m is " << m << "\n"; 
+      std::cout << "\ts = " << s << " m2 is " << m2 << "\n"; 
+      complex w(1, 0);
+      complex wm = exp(-J * (PI / m2));
+      std::cout << "\ts = " << s << " wm, the exponent, is " << wm << "\n"; 
+      for (int j = 0; j < m2; ++j) {
+         std::cout << "\ts is " << s << " and j is " << j << "\n"; 
+         for (int k = j; k < fft_size; k += m) {
+            std::cout << "\t\ts = " << s << " and j is " << j << " and k, one index into b, is " << k << "\n"; 
+            std::cout << "\t\ts = " << s << " and j is " << j << " and m2 is " << m2 << "\n"; 
+            std::cout << "\t\ts = " << s << " and j is " << j << " and k + m2, the other index into b, is " 
+               << (k + m2) << "\n"; 
+            complex t = w * b[k + m2];
+            complex u = b[k];
+            b[k] = u + t;
+            b[k + m2] = u - t;
+            std::cout << "\t\ts = " << s << " and j is " << j <<  " and b[k] = " << b[k] << "\n";
+            std::cout << "\t\ts = " << s << " and j is " << j <<  " and b[k + m2] = " << b[k + m2] 
+               << "\n";
+         }
+         w *= wm;
+         std::cout << "\ts = " << s << " j = " << j << ": w = " << w << "\n"; 
+      }
+   }
+}
+
+
+
