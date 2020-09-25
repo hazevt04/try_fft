@@ -2,6 +2,9 @@ cmake_minimum_required( VERSION 3.8.0 )
 
 project( try_fft LANGUAGES CXX )
 
+# Google Benchmark Library
+find_package(benchmark REQUIRED)
+
 include_directories( "include" )
 
 set(EXEC_NAME "${CMAKE_PROJECT_NAME}")
@@ -13,8 +16,7 @@ set(SRCS
    )
 
 add_executable( "${EXEC_NAME}" "${SRCS}" )
-target_link_libraries( "${EXEC_NAME}" m )
-
+target_link_libraries( "${EXEC_NAME}" benchmark::benchmark m )
 set_target_properties( ${EXEC_NAME}
     PROPERTIES
         CXX_STANDARD 11
