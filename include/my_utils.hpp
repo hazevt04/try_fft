@@ -13,6 +13,7 @@
 #include <stdarg.h>
 #include <string>
 #include <vector>
+#include <complex>
 
 #include "VariadicToOutputStream.hpp"
 
@@ -135,7 +136,7 @@ void print_vals(const std::vector<T>& vals,
    const char* delim = " ",
    const char* suffix = "\n") {
    std::cout << prefix;
-   std::copy(std::begin(vals), std::end(vals), std::ostream_iterator<T>(std::cout, "\n"));
+   std::copy(std::begin(vals), std::end(vals), std::ostream_iterator<T>(std::cout, delim));
    std::cout << suffix;
 }
 
@@ -166,6 +167,34 @@ inline bool compare_floats(float* const read_vals, float* const write_vals, int 
    }
    return true;
 }
+
+
+template<typename T>
+bool complex_vals_close( const std::complex<T>& lval, const std::complex<T>& rval, const T& max_diff ) {
+   T abs_diff_real = abs( lval.real() - rval.real() );
+   T abs_diff_imag = abs( lval.imag() - rval.imag() );
+
+   return ( ( abs_diff_real <= max_diff ) && ( abs_diff_imag <= max_diff ) );
+}
+
+
+template<typename T>
+using complex_vec = std::vector<std::complex<T>>;
+
+template<typename T>
+std::pair<bool,int> complex_vecs_close( const complex_vec<T>& lvals, const complex_vec<T>& rvals, const T& max_diff ) {
+
+   for( size_t index = 0; index != lvals.size(); ++index ) {
+      T abs_diff_real = abs( lvals[index].real() - rvals[index].real() );
+      T abs_diff_imag = abs( lvals[index].imag() - rvals[index].imag() );
+
+      if ( ( abs_diff_real > max_diff ) || ( abs_diff_imag > max_diff ) ) {
+         return std::pair<bool,int>{false,index};
+      }
+   }
+   return std::pair<bool,int>{true,-1};
+}
+
 
 int free_these(void* arg1, ...);
 

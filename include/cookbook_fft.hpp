@@ -22,33 +22,70 @@ unsigned int bit_reverse(unsigned int x, int log2n) {
 
 constexpr double PI = 3.1415926536;
 
-template <class Iter_T>
-void cookbook_fft(Iter_T a, Iter_T b, int log2n) {
+//template <class Iter_T>
+//void cookbook_fft(Iter_T a, Iter_T b, int log2n) {
 
-   typedef typename std::iterator_traits<Iter_T>::value_type complex;
-   const complex J(0, 1);
-   int fft_size = 1 << log2n;
+   //typedef typename std::iterator_traits<Iter_T>::value_type complex;
+   //const complex J(0, 1);
+   //int fft_size = 1 << log2n;
    
-   for (unsigned int i = 0; i < fft_size; ++i) {
+   //for (unsigned int i = 0; i < fft_size; ++i) {
+      //unsigned int br_index = bit_reverse(i, log2n);
+      //b[br_index] = a[i];
+   //}
+
+   //for (int s = 1; s <= log2n; ++s) {
+      //int m = 1 << s;
+      //int m2 = m >> 1;
+      //complex w(1, 0);
+      //complex wm = exp(-J * (PI / m2));
+      //for (int j = 0; j < m2; ++j) {
+         //for (int k = j; k < fft_size; k += m) {
+            //complex t = w * b[k + m2];
+            //complex u = b[k];
+            //b[k] = u + t;
+            //b[k + m2] = u - t;
+         //}
+         //w *= wm;
+      //}
+   //}
+//}
+
+template <typename T>
+using complex_vec = std::vector<std::complex<T>>;
+
+template <typename T>
+void cookbook_fft(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
+
+   const std::complex<T> J(0, 1);
+   unsigned int fft_size = 1 << log2n;
+   
+   for (unsigned int i = 0; i != fft_size; ++i) {
       unsigned int br_index = bit_reverse(i, log2n);
       b[br_index] = a[i];
    }
 
    for (int s = 1; s <= log2n; ++s) {
-      int m = 1 << s;
-      int m2 = m >> 1;
-      complex w(1, 0);
-      complex wm = exp(-J * (PI / m2));
-      for (int j = 0; j < m2; ++j) {
-         for (int k = j; k < fft_size; k += m) {
-            complex t = w * b[k + m2];
-            complex u = b[k];
+      unsigned int m = 1 << s;
+      unsigned int m2 = m >> 1;
+      std::complex<T> w(1, 0);
+      std::complex<T> wm = exp(-J * (PI / m2));
+      for (unsigned int j = 0; j != m2; ++j) {
+         for (int k = j; k < (int)fft_size; k += m) {
+            std::complex<T> t = w * b[k + m2];
+            std::complex<T> u = b[k];
             b[k] = u + t;
             b[k + m2] = u - t;
          }
          w *= wm;
       }
-   }
+   } // end of for (int s = 1; s <= log2n; ++s) {
+
+   for(int index = 0; index < fft_size>>1; ++index) {
+      std::complex<T> temp = b[fft_size-index-1];
+      b[fft_size-index-1] = b[index];
+      b[index] = temp;
+   } 
 }
 
 
