@@ -69,7 +69,7 @@ void cookbook_fft(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
       unsigned int m = 1 << s;
       unsigned int m2 = m >> 1;
       std::complex<T> w(1, 0);
-      std::complex<T> wm = exp(-J * (PI / m2));
+      std::complex<T> wm = exp(-J * (T(PI) / m2));
       for (unsigned int j = 0; j != m2; ++j) {
          for (int k = j; k < (int)fft_size; k += m) {
             std::complex<T> t = w * b[k + m2];
@@ -81,11 +81,11 @@ void cookbook_fft(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
       }
    } // end of for (int s = 1; s <= log2n; ++s) {
 
-   for(int index = 0; index < fft_size>>1; ++index) {
-      std::complex<T> temp = b[fft_size-index-1];
-      b[fft_size-index-1] = b[index];
-      b[index] = temp;
-   } 
+   //for(int index = 0; index < fft_size>>1; ++index) {
+      //std::complex<T> temp = b[fft_size-index-1];
+      //b[fft_size-index-1] = b[index];
+      //b[index] = temp;
+   //} 
 }
 
 

@@ -1,50 +1,41 @@
 // C++ File for main
 
 #include "my_utils.hpp"
+#include "my_file_io_funcs.hpp"
 
 #include "cookbook_fft.hpp"
 #include "ct_fft.hpp"
 
 int main() {
    try {
-      int num_samples_bits = 3;
-      int num_samples = static_cast<int>( 1u << num_samples_bits );
+      int num_samples_bits = 20;
+      int num_samples = 1u << num_samples_bits;
 
-      complex_vec<double> samples{ {0, 0}, {1, 1}, {3, 3}, {4, 4}, 
-         {4, 4}, {3, 3}, {1, 1}, {0, 0} };
-      complex_vec<double> expected_frequencies{ {16,16}, {-4.82843,-11.6569}, {0,0}, 
-         {-0.343146,0.828427}, {0,0}, {0.828427,-0.343146}, {0,0}, {-11.6569,-4.82843} };
+      complex_vec<float> samples( num_samples );
+      
+      read_binary_complex_file<float>(samples,
+         "../testdataBPSKcomplex.bin",
+         num_samples,
+         false);
 
-      complex_vec<double> frequencies( num_samples );
-      std::fill( frequencies.begin(), frequencies.end(), 0 );
-
-      std::vector< std::pair< complex_vec<double>, complex_vec<double> > > tests{ 
-         {
-            { {0, 0}, {1, 1}, {3, 3}, {4, 4}, {4, 4}, {3, 3}, {1, 1}, {0, 0} },
-            { {-11.6569,-4.82843}, {0,0}, {0.828427,-0.343146}, {0,0}, {-0.343146,0.828427}, {0,0}, {-4.82843,-11.6569}, {16,16} }
-         }
+      complex_vec<float> some_expected_frequencies{ 
+         {-7440., 8288.}, {9708.656, 3208.545}, {548.88574, 3287.003},
+         {-3839.7205, 4795.2656}, {5758.583, -7036.872}, {-3411.0234  -2247.5532},
+         {4180.694, 4903.826}, {5899.282, 3323.6128}, {-5254.4717, -11024.913},
+         {1275.5605, 3912.9788}
       };
 
+      complex_vec<float> frequencies( num_samples );
+      std::fill( frequencies.begin(), frequencies.end(), 0 );
 
-      for( auto test: tests ) {
-         cookbook_fft(test.first, frequencies, num_samples_bits);
+      cookbook_fft(samples, frequencies, num_samples_bits);
 
-         const char delim[] = " ";
-         const char suffix[] = "\n";
-         print_vals<std::complex<double>>(test.first, "Cookbook FFT samples: ", delim, suffix);
-         print_vals<std::complex<double>>(test.second, "Cookbook FFT expected frequencies:\n", delim, suffix);
-         print_vals<std::complex<double>>(frequencies, "Cookbook FFT frequencies:\n", delim, suffix);
+      const char delim[] = " ";
+      const char suffix[] = "\n";
+      print_vals<std::complex<float>>(samples, "Cookbook FFT samples: ", delim, suffix);
+      print_vals<std::complex<float>>(some_expected_frequencies, "Cookbook FFT some expected frequencies:\n", delim, suffix);
+      print_vals<std::complex<float>>(frequencies.data(), (int)some_expected_frequencies.size(), 0, "Cookbook FFT frequencies:\n", delim, suffix);
          
-         auto check = complex_vecs_close<double>( frequencies, test.second, 1e-4 );
-         if ( check.second >= 0 ) {
-            std::cout << "ERROR: Item " << check.second << " actual: " 
-               << frequencies[check.second] << " is too far from the expected: "
-               << test.second[check.second] << "\n"; 
-         }
-         std::cout << "Test PASSED\n"; 
-         std::fill( frequencies.begin(), frequencies.end(), 0 );
-      }
-
       return EXIT_SUCCESS;
 
    } catch (std::exception& ex) {

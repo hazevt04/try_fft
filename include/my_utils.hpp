@@ -153,6 +153,19 @@ void print_vals(const T* vals,
    std::cout << suffix;
 }
 
+template <class T>
+void print_vals(const T* vals,
+   const int num_vals,
+   const int start_index,
+   const char* prefix = "",
+   const char* delim = " ",
+   const char* suffix = "\n") {
+   std::cout << prefix;
+   for (int index = start_index; index < (start_index + num_vals); ++index) {
+      std::cout << vals[index] << ((index == num_vals - 1) ? "\n" : delim);
+   }
+   std::cout << suffix;
+}
 
 void printf_floats(float* const vals, const int num_vals);
 void printf_ints(int* const vals, const int num_vals);
