@@ -14,14 +14,27 @@ int main(int argc, char** argv) {
          cx(4, 4), cx(3, 3), cx(1, 1), cx(0, 0)};
       cx b[8];
       cookbook_fft(a, b, 3);
-      for (int i = 0; i < 8; ++i)
-         std::cout << b[i] << "\n";
+
+      std::cout << "Cookbook FFT input: "; 
+      for (int i = 0; i < 8; ++i) {
+         std::cout << a[i] << " ";
+      }
+      std::cout << "\n"; 
+      
+      std::cout << "Cookbook FFT output: "; 
+      for (int i = 0; i < 8; ++i) {
+         std::cout << b[i] << " ";
+      }
+      std::cout << "\n"; 
 
       // double ct_a[] = {0, 0, 1, 1, 3, 3, 4, 4,
          // 4, 4, 3, 3, 1, 1, 0, 0};
       // ct_fft(ct_a, 8);
-      // for (int i = 0; i < 16; ++i)
-         // std::cout << ct_a[i] << "\n";
+      //std::cout << "Cooley-Tukey FFT output: "; 
+      //for (int i = 0; i < 16; ++i) {
+         //std::cout << b[i] << " ";
+      //}
+      //std::cout << "\n"; 
 
       return EXIT_SUCCESS;
 
