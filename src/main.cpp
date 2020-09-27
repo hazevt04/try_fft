@@ -52,6 +52,8 @@
   // 343.32575878+194.18044368j  656.97448503+592.2103624j
  // -443.87835664-364.05199061j  -72.23205842-241.45256226j]
 
+constexpr float max_diff = 1e-3;
+
 int main() {
    try {
       int num_samples_bits = 6;
@@ -109,12 +111,15 @@ int main() {
       const char suffix[] = "\n";
       print_vals<std::complex<float>>(samples, "Cookbook FFT samples: ", delim, suffix);
       print_vals<std::complex<float>>(frequencies, "Cookbook FFT frequencies:\n", delim, suffix);
-       
-      auto check = complex_vecs_close<float>( frequencies, expected_frequencies, 1e-3 );
-      if ( check.second >= 0 ) {
-         std::cout << "ERROR: Mismatch at index " << check.second << " between actual frequency " 
-            << frequencies[check.second] << " and the expected frequency "
-            << expected_frequencies[check.second] << "\n";
+      
+      auto all_are_close_matches = complex_vecs_close<float>( frequencies, expected_frequencies, max_diff );
+      if ( !all_are_close_matches.first ) {
+         std::cout << "ERROR: Index " << all_are_close_matches.second << ":\n";
+         std::cout << "\tActual: " << frequencies[all_are_close_matches.second] << "\n";
+         std::cout << "\tExpected: " << expected_frequencies[all_are_close_matches.second] << "\n";
+         std::cout << "\tDifference: " 
+            << std::abs(frequencies[all_are_close_matches.second] - expected_frequencies[all_are_close_matches.second] )
+            << " greater than max: " << max_diff << "\n";  
       }
       return EXIT_SUCCESS;
 
