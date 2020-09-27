@@ -22,7 +22,6 @@ unsigned int bit_reverse(unsigned int x, int log2n) {
 
 constexpr double PI = 3.1415926536;
 
-
 template <typename T>
 using complex_vec = std::vector<std::complex<T>>;
 
@@ -54,4 +53,5 @@ void cookbook_fft(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
    } // end of for (int s = 1; s <= log2n; ++s) {
 
 }
+
 
