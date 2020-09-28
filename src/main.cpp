@@ -62,9 +62,9 @@ int main() {
       complex_vec<float> samples( num_samples );
       std::fill( samples.begin(), samples.end(), 0 );
       
-      read_binary_complex_file<float>(samples,
+      read_binary_file<std::complex<float>>(samples,
          "../testdataBPSKcomplex.bin",
-         64,
+         num_samples,
          false);
 
       complex_vec<float> expected_frequencies{
@@ -112,13 +112,13 @@ int main() {
       print_vals<std::complex<float>>(samples, "Cookbook FFT samples: ", delim, suffix);
       print_vals<std::complex<float>>(frequencies, "Cookbook FFT frequencies:\n", delim, suffix);
       
-      auto all_are_close_matches = complex_vecs_close<float>( frequencies, expected_frequencies, max_diff );
-      if ( !all_are_close_matches.first ) {
-         std::cout << "ERROR: Index " << all_are_close_matches.second << ":\n";
-         std::cout << "\tActual: " << frequencies[all_are_close_matches.second] << "\n";
-         std::cout << "\tExpected: " << expected_frequencies[all_are_close_matches.second] << "\n";
+      auto mismatches_found = complex_mismatch_where<float>( frequencies, expected_frequencies, max_diff );
+      if ( !mismatches_found.first ) {
+         std::cout << "ERROR: Index " << mismatches_found.second << ":\n";
+         std::cout << "\tActual: " << frequencies[mismatches_found.second] << "\n";
+         std::cout << "\tExpected: " << expected_frequencies[mismatches_found.second] << "\n";
          std::cout << "\tDifference: " 
-            << std::abs(frequencies[all_are_close_matches.second] - expected_frequencies[all_are_close_matches.second] )
+            << std::abs(frequencies[mismatches_found.second] - expected_frequencies[mismatches_found.second] )
             << " greater than max: " << max_diff << "\n";  
       }
       return EXIT_SUCCESS;

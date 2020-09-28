@@ -14,6 +14,7 @@
 #include <string>
 #include <vector>
 #include <complex>
+#include <algorithm>
 
 #include "VariadicToOutputStream.hpp"
 
@@ -91,6 +92,10 @@
 #   define CEILING(a, b) ((a) + ((b)-1)) / (b);
 #endif
 
+#ifndef dout
+#  define dout debug && std::cout
+#endif
+
 // Hacker's Delight Second Edition pg 44 ('doz')
 // Only valid for signed integers, -2^30 < a,b <=(2^30)-1
 // or unsigned integers, 0 < a,b <= (2^31)-1
@@ -111,6 +116,7 @@ typedef std::chrono::duration<float, std::nano> Duration_ns;
 // printf( "CPU: Func() took %f milliseconds to process %d values\n", duration_ms.count(), num_vals
 // );
 
+bool string_is_palindrome(const std::string& s);
 
 template <class T>
 void gen_vals(std::vector<T>& vals, const T lower, const T upper) {
@@ -153,7 +159,7 @@ void print_vals(const T* vals,
    std::cout << suffix;
 }
 
-template <class T>
+template <typename T>
 void print_vals(const T* vals,
    const int num_vals,
    const int start_index,
@@ -167,14 +173,70 @@ void print_vals(const T* vals,
    std::cout << suffix;
 }
 
-void printf_floats(float* const vals, const int num_vals);
-void printf_ints(int* const vals, const int num_vals);
-void printf_uints(unsigned int* const vals, const int num_vals);
-void printf_ulongs(unsigned long* const vals, const int num_vals);
 
-inline bool compare_floats(float* const read_vals, float* const write_vals, int num_vals) {
-   for (int index = 0; index < num_vals; index++) {
-      if (read_vals[index] != write_vals[index]) {
+template <typename T>
+bool compare_vals(const T* lvals, const T* rvals, int num_vals) {
+   for (int index = 0; index < num_vals; ++index) {
+      if (lvals[index] != rvals[index]) {
+         return false;
+      }
+   }
+   return true;
+}
+
+
+template <typename T>
+std::pair<bool, int> mismatch_where(const T* lvals, const T* rvals, int num_vals) {
+   for (int index = 0; index < num_vals; ++index) {
+      if (lvals[index] != rvals[index]) {
+         return std::pair<bool, int>{false,index};
+      }
+   }
+   return std::pair<bool, int>{true, -1};
+}
+
+// Only here for consistency sake, probably not needed
+template <typename T>
+bool compare_vals(const std::vector<T>& lvals, const std::vector<T>& rvals) {
+   for (int index = 0; index < (int)lvals.size(); ++index) {
+      if (lvals[index] != rvals[index]) {
+         return false;
+      }
+   }
+
+   return true; 
+}
+
+template <typename T>
+std::pair<bool, int> mismatch_where(const std::vector<T>& lvals, const std::vector<T>& rvals) {
+   for (int index = 0; index < (int)lvals.size(); ++index) {
+      if (lvals[index] != rvals[index]) {
+         return std::pair<bool, int>{false,index};
+      }
+   }
+   return std::pair<bool, int>{true, -1};
+}
+
+// template<typename T>
+// bool complex_vals_are_close( const std::complex<T>& lval, const std::complex<T>& rval, const T& max_diff ) {
+   // T abs_diff_real = abs( lval.real() - rval.real() );
+   // T abs_diff_imag = abs( lval.imag() - rval.imag() );
+//
+   // return ( ( abs_diff_real <= max_diff ) && ( abs_diff_imag <= max_diff ) );
+// }
+
+template<typename T>
+using complex_vec = std::vector<std::complex<T>>;
+
+
+template<typename T>
+bool complex_vals_are_close( const complex_vec<T>& lvals, const complex_vec<T>& rvals, const T& max_diff ) {
+
+   for( size_t index = 0; index != lvals.size(); ++index ) {
+      T abs_diff_real = abs( lvals[index].real() - rvals[index].real() );
+      T abs_diff_imag = abs( lvals[index].imag() - rvals[index].imag() );
+
+      if ( ( abs_diff_real > max_diff ) || ( abs_diff_imag > max_diff ) ) {
          return false;
       }
    }
@@ -183,25 +245,40 @@ inline bool compare_floats(float* const read_vals, float* const write_vals, int 
 
 
 template<typename T>
-bool complex_vals_close( const std::complex<T>& lval, const std::complex<T>& rval, const T& max_diff ) {
-   T abs_diff_real = abs( lval.real() - rval.real() );
-   T abs_diff_imag = abs( lval.imag() - rval.imag() );
-
-   return ( ( abs_diff_real <= max_diff ) && ( abs_diff_imag <= max_diff ) );
-}
-
-
-template<typename T>
-using complex_vec = std::vector<std::complex<T>>;
-
-template<typename T>
-std::pair<bool,int> complex_vecs_close( const complex_vec<T>& lvals, const complex_vec<T>& rvals, const T& max_diff ) {
+std::pair<bool,int> complex_mismatch_where( const complex_vec<T>& lvals, const complex_vec<T>& rvals, const T& max_diff ) {
 
    for( size_t index = 0; index != lvals.size(); ++index ) {
       T abs_diff_real = abs( lvals[index].real() - rvals[index].real() );
       T abs_diff_imag = abs( lvals[index].imag() - rvals[index].imag() );
 
       if ( ( abs_diff_real > max_diff ) || ( abs_diff_imag > max_diff ) ) {
+         return std::pair<bool,int>{false,index};
+      }
+   }
+   return std::pair<bool,int>{true,-1};
+}
+
+
+template<typename T>
+bool vals_are_close( const std::vector<T>& lvals, const std::vector<T>& rvals, const T& max_diff ) {
+
+   for( size_t index = 0; index != lvals.size(); ++index ) {
+      T abs_diff = abs( lvals[index] - rvals[index] );
+
+      if ( ( abs_diff > max_diff ) ) {
+         return false;
+      }
+   }
+   return true;
+}
+
+template<typename T>
+std::pair<bool,int> mismatch_where( const std::vector<T>& lvals, const std::vector<T>& rvals, const T& max_diff ) {
+
+   for( size_t index = 0; index != lvals.size(); ++index ) {
+      const T abs_diff = abs( lvals[index] - rvals[index] );
+
+      if ( ( abs_diff > max_diff ) ) {
          return std::pair<bool,int>{false,index};
       }
    }
