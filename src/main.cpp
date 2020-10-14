@@ -1,42 +1,61 @@
 // C++ File for main
-#include <tuple>
+
 #include "my_utils.hpp"
+#include "my_file_io_funcs.hpp"
 
 #include "cookbook_fft.hpp"
 #include "ct_fft.hpp"
 
+#include "expected_frequencies.hpp"
+
 int main() {
    try {
+      const bool debug = false;
+      unsigned int num_samples_bits = 6;
+      int num_samples = (1u << num_samples_bits);
 
-      std::vector< std::pair<complex_vec<float>, complex_vec<float> >  > tests{ 
-         {
-               { {0, 0}, {1, 1}, {3, 3}, {4, 4}, {4, 4}, {3, 3}, {1, 1}, {0, 0} },
-               { {16,16}, {-4.82843,-11.6569}, {0,0}, {-0.343146,0.828427}, {0,0}, {0.828427,-0.343146}, {0,0}, {-11.6569,-4.82843} }
-         }
-      };
+      complex_vec<float> samples( num_samples );
+      
+      read_binary_complex_file<float>(samples,
+         "../testdataBPSKcomplex.bin",
+         num_samples,
+         false);
 
-      for( auto test: tests ) {
-         int num_samples = (int)test.first.size();
-         int num_samples_bits = 3;
-         
-         complex_vec<float> frequencies(num_samples);
-         
-         cookbook_fft(test.first, frequencies, num_samples_bits);
+      complex_vec<float> frequencies( num_samples );
+      std::fill( frequencies.begin(), frequencies.end(), 0 );
 
-         const char delim[] = " ";
+      Time_Point start = Steady_Clock::now();
+      
+      cookbook_fft(samples, frequencies, num_samples_bits);
+      //cookbook_fft_debug(samples, frequencies, num_samples_bits);
+      
+      Duration_ms duration_ms = Steady_Clock::now() - start;
+      std::cout << "Cookbook FFT with " << num_samples << " samples took " << duration_ms.count() << " milliseconds\n"; 
+
+      if ( debug ) {
+         const char delim[] = ", ";
          const char suffix[] = "\n";
-         print_vals<std::complex<float>>(test.first, "Cookbook FFT samples: ", delim, suffix);
-         print_vals<std::complex<float>>(frequencies, "Cookbook FFT frequencies:\n", delim, suffix);
-         
-         auto check = complex_vecs_close<float>( frequencies, test.second, 1e-4 );
-         if ( check.second >= 0 ) {
-            std::cout << "ERROR: Item " << check.second << " actual: " 
-               << frequencies[check.second] << " is too far from the expected: "
-               << test.second[check.second] << "\n"; 
-         }
-         std::cout << "Test PASSED\n"; 
-         std::fill( frequencies.begin(), frequencies.end(), 0 );
+         print_vals<std::complex<float>>(samples.data(), num_samples, "Samples: ", delim, suffix);
+         print_vals<std::complex<float>>(expected_frequencies.data(), num_samples, "Expected frequencies: ", delim, suffix);
+         print_vals<std::complex<float>>(frequencies.data(), num_samples, "Actual frequencies: ", delim, suffix);
       }
+      
+      const float max_diff = 1e-2;
+      auto check_results = complex_vecs_close( frequencies, expected_frequencies, max_diff );
+      if ( false == check_results.first ) {
+         throw std::runtime_error{ std::string{"Mismatch: "} +
+            std::string{"Index: "} + std::to_string(check_results.second) + 
+            std::string{" Expected Frequency: {"} + 
+               std::to_string(expected_frequencies.at(check_results.second).real()) + ", " +
+               std::to_string(expected_frequencies.at(check_results.second).imag()) + 
+               "}" +
+            std::string{" Actual Frequency: {"} + 
+               std::to_string(expected_frequencies.at(check_results.second).real()) + ", " +
+               std::to_string(expected_frequencies.at(check_results.second).imag()) + 
+               "}"
+         };
+      }
+      std::cout << "All frequencies matched expected.\n"; 
       return EXIT_SUCCESS;
 
    } catch (std::exception& ex) {

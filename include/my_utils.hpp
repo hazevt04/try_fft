@@ -146,9 +146,10 @@ void print_vals(const T* vals,
    const char* prefix = "",
    const char* delim = " ",
    const char* suffix = "\n") {
-   std::cout << prefix;
+   //std::cout << prefix;
    for (int index = 0; index < num_vals; ++index) {
-      std::cout << vals[index] << ((index == num_vals - 1) ? "\n" : delim);
+      std::cout << "\nIndex = " << index << ": " << prefix 
+         << vals[index] << ((index == num_vals - 1) ? "\n" : delim);
    }
    std::cout << suffix;
 }
@@ -220,5 +221,3 @@ inline std::string decode_status(int status) {
    }
    return std::string("Unknown status value: " + std::to_string(status) + "\n");
 }
-
-
