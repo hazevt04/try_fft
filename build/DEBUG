@@ -1,0 +1,1623 @@
+Number of bits in FFT Size is 6
+FFT Size is 64
+	0 bit reversed is 0
+	1 bit reversed is 32
+	2 bit reversed is 16
+	3 bit reversed is 48
+	4 bit reversed is 8
+	5 bit reversed is 40
+	6 bit reversed is 24
+	7 bit reversed is 56
+	8 bit reversed is 4
+	9 bit reversed is 36
+	10 bit reversed is 20
+	11 bit reversed is 52
+	12 bit reversed is 12
+	13 bit reversed is 44
+	14 bit reversed is 28
+	15 bit reversed is 60
+	16 bit reversed is 2
+	17 bit reversed is 34
+	18 bit reversed is 18
+	19 bit reversed is 50
+	20 bit reversed is 10
+	21 bit reversed is 42
+	22 bit reversed is 26
+	23 bit reversed is 58
+	24 bit reversed is 6
+	25 bit reversed is 38
+	26 bit reversed is 22
+	27 bit reversed is 54
+	28 bit reversed is 14
+	29 bit reversed is 46
+	30 bit reversed is 30
+	31 bit reversed is 62
+	32 bit reversed is 1
+	33 bit reversed is 33
+	34 bit reversed is 17
+	35 bit reversed is 49
+	36 bit reversed is 9
+	37 bit reversed is 41
+	38 bit reversed is 25
+	39 bit reversed is 57
+	40 bit reversed is 5
+	41 bit reversed is 37
+	42 bit reversed is 21
+	43 bit reversed is 53
+	44 bit reversed is 13
+	45 bit reversed is 45
+	46 bit reversed is 29
+	47 bit reversed is 61
+	48 bit reversed is 3
+	49 bit reversed is 35
+	50 bit reversed is 19
+	51 bit reversed is 51
+	52 bit reversed is 11
+	53 bit reversed is 43
+	54 bit reversed is 27
+	55 bit reversed is 59
+	56 bit reversed is 7
+	57 bit reversed is 39
+	58 bit reversed is 23
+	59 bit reversed is 55
+	60 bit reversed is 15
+	61 bit reversed is 47
+	62 bit reversed is 31
+	63 bit reversed is 63
+	s = 1 m is 2
+	s = 1 m2 is 1
+	-J (-0,-1)
+	s = 1 wm, the exponent, is (-1,8.74228e-08)
+	s is 1 and j is 0
+		s = 1 and j is 0 and k, one index into b, is 0
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 1
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[0] = (4,-40)
+		s = 1 and j is 0 and t_b[1] = (52,0)
+
+		s = 1 and j is 0 and k, one index into b, is 2
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 3
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[2] = (8,-8)
+		s = 1 and j is 0 and t_b[3] = (-24,0)
+
+		s = 1 and j is 0 and k, one index into b, is 4
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 5
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[4] = (-36,4)
+		s = 1 and j is 0 and t_b[5] = (-28,-20)
+
+		s = 1 and j is 0 and k, one index into b, is 6
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 7
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[6] = (0,-20)
+		s = 1 and j is 0 and t_b[7] = (40,4)
+
+		s = 1 and j is 0 and k, one index into b, is 8
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 9
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[8] = (-16,-12)
+		s = 1 and j is 0 and t_b[9] = (40,-12)
+
+		s = 1 and j is 0 and k, one index into b, is 10
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 11
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[10] = (24,-20)
+		s = 1 and j is 0 and t_b[11] = (-8,36)
+
+		s = 1 and j is 0 and k, one index into b, is 12
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 13
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[12] = (-8,28)
+		s = 1 and j is 0 and t_b[13] = (-40,-12)
+
+		s = 1 and j is 0 and k, one index into b, is 14
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 15
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[14] = (-4,0)
+		s = 1 and j is 0 and t_b[15] = (28,-24)
+
+		s = 1 and j is 0 and k, one index into b, is 16
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 17
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[16] = (-8,-12)
+		s = 1 and j is 0 and t_b[17] = (24,-20)
+
+		s = 1 and j is 0 and k, one index into b, is 18
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 19
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[18] = (40,20)
+		s = 1 and j is 0 and t_b[19] = (0,12)
+
+		s = 1 and j is 0 and k, one index into b, is 20
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 21
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[20] = (-24,4)
+		s = 1 and j is 0 and t_b[21] = (-32,-20)
+
+		s = 1 and j is 0 and k, one index into b, is 22
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 23
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[22] = (-4,-24)
+		s = 1 and j is 0 and t_b[23] = (28,0)
+
+		s = 1 and j is 0 and k, one index into b, is 24
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 25
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[24] = (-20,-28)
+		s = 1 and j is 0 and t_b[25] = (4,-28)
+
+		s = 1 and j is 0 and k, one index into b, is 26
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 27
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[26] = (8,-8)
+		s = 1 and j is 0 and t_b[27] = (24,8)
+
+		s = 1 and j is 0 and k, one index into b, is 28
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 29
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[28] = (12,20)
+		s = 1 and j is 0 and t_b[29] = (-44,20)
+
+		s = 1 and j is 0 and k, one index into b, is 30
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 31
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[30] = (-20,-4)
+		s = 1 and j is 0 and t_b[31] = (12,-12)
+
+		s = 1 and j is 0 and k, one index into b, is 32
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 33
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[32] = (-8,-32)
+		s = 1 and j is 0 and t_b[33] = (40,-24)
+
+		s = 1 and j is 0 and k, one index into b, is 34
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 35
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[34] = (28,-12)
+		s = 1 and j is 0 and t_b[35] = (-4,20)
+
+		s = 1 and j is 0 and k, one index into b, is 36
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 37
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[36] = (-36,12)
+		s = 1 and j is 0 and t_b[37] = (-12,-28)
+
+		s = 1 and j is 0 and k, one index into b, is 38
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 39
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[38] = (-8,-36)
+		s = 1 and j is 0 and t_b[39] = (32,-4)
+
+		s = 1 and j is 0 and k, one index into b, is 40
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 41
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[40] = (-32,-20)
+		s = 1 and j is 0 and t_b[41] = (16,-20)
+
+		s = 1 and j is 0 and k, one index into b, is 42
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 43
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[42] = (32,-24)
+		s = 1 and j is 0 and t_b[43] = (8,16)
+
+		s = 1 and j is 0 and k, one index into b, is 44
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 45
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[44] = (16,24)
+		s = 1 and j is 0 and t_b[45] = (-24,-16)
+
+		s = 1 and j is 0 and k, one index into b, is 46
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 47
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[46] = (-12,-12)
+		s = 1 and j is 0 and t_b[47] = (20,-20)
+
+		s = 1 and j is 0 and k, one index into b, is 48
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 49
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[48] = (-8,-12)
+		s = 1 and j is 0 and t_b[49] = (24,-20)
+
+		s = 1 and j is 0 and k, one index into b, is 50
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 51
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[50] = (4,-4)
+		s = 1 and j is 0 and t_b[51] = (-12,28)
+
+		s = 1 and j is 0 and k, one index into b, is 52
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 53
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[52] = (-12,24)
+		s = 1 and j is 0 and t_b[53] = (-36,-8)
+
+		s = 1 and j is 0 and k, one index into b, is 54
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 55
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[54] = (-28,-32)
+		s = 1 and j is 0 and t_b[55] = (20,-24)
+
+		s = 1 and j is 0 and k, one index into b, is 56
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 57
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[56] = (-12,-8)
+		s = 1 and j is 0 and t_b[57] = (4,-24)
+
+		s = 1 and j is 0 and k, one index into b, is 58
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 59
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[58] = (-4,-32)
+		s = 1 and j is 0 and t_b[59] = (20,24)
+
+		s = 1 and j is 0 and k, one index into b, is 60
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 61
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[60] = (20,0)
+		s = 1 and j is 0 and t_b[61] = (-44,16)
+
+		s = 1 and j is 0 and k, one index into b, is 62
+		s = 1 and j is 0 and m2 is 1
+		s = 1 and j is 0 and k + m2, the other index into t_b, is 63
+		s = 1 and j is 0 and w is (1,0)
+		s = 1 and j is 0 and t_b[62] = (-28,24)
+		s = 1 and j is 0 and t_b[63] = (4,-24)
+
+	s = 1 j = 0: w = (-1,8.74228e-08)
+
+	s = 2 m is 4
+	s = 2 m2 is 2
+	-J (-0,-1)
+	s = 2 wm, the exponent, is (-4.37114e-08,-1)
+	s is 2 and j is 0
+		s = 2 and j is 0 and k, one index into b, is 0
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 2
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[0] = (12,-48)
+		s = 2 and j is 0 and t_b[2] = (-4,-32)
+
+		s = 2 and j is 0 and k, one index into b, is 4
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 6
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[4] = (-36,-16)
+		s = 2 and j is 0 and t_b[6] = (-36,24)
+
+		s = 2 and j is 0 and k, one index into b, is 8
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 10
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[8] = (8,-32)
+		s = 2 and j is 0 and t_b[10] = (-40,8)
+
+		s = 2 and j is 0 and k, one index into b, is 12
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 14
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[12] = (-12,28)
+		s = 2 and j is 0 and t_b[14] = (-4,28)
+
+		s = 2 and j is 0 and k, one index into b, is 16
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 18
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[16] = (32,8)
+		s = 2 and j is 0 and t_b[18] = (-48,-32)
+
+		s = 2 and j is 0 and k, one index into b, is 20
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 22
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[20] = (-28,-20)
+		s = 2 and j is 0 and t_b[22] = (-20,28)
+
+		s = 2 and j is 0 and k, one index into b, is 24
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 26
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[24] = (-12,-36)
+		s = 2 and j is 0 and t_b[26] = (-28,-20)
+
+		s = 2 and j is 0 and k, one index into b, is 28
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 30
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[28] = (-8,16)
+		s = 2 and j is 0 and t_b[30] = (32,24)
+
+		s = 2 and j is 0 and k, one index into b, is 32
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 34
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[32] = (20,-44)
+		s = 2 and j is 0 and t_b[34] = (-36,-20)
+
+		s = 2 and j is 0 and k, one index into b, is 36
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 38
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[36] = (-44,-24)
+		s = 2 and j is 0 and t_b[38] = (-28,48)
+
+		s = 2 and j is 0 and k, one index into b, is 40
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 42
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[40] = (0,-44)
+		s = 2 and j is 0 and t_b[42] = (-64,4)
+
+		s = 2 and j is 0 and k, one index into b, is 44
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 46
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[44] = (4,12)
+		s = 2 and j is 0 and t_b[46] = (28,36)
+
+		s = 2 and j is 0 and k, one index into b, is 48
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 50
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[48] = (-4,-16)
+		s = 2 and j is 0 and t_b[50] = (-12,-8)
+
+		s = 2 and j is 0 and k, one index into b, is 52
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 54
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[52] = (-40,-8)
+		s = 2 and j is 0 and t_b[54] = (16,56)
+
+		s = 2 and j is 0 and k, one index into b, is 56
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 58
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[56] = (-16,-40)
+		s = 2 and j is 0 and t_b[58] = (-8,24)
+
+		s = 2 and j is 0 and k, one index into b, is 60
+		s = 2 and j is 0 and m2 is 2
+		s = 2 and j is 0 and k + m2, the other index into t_b, is 62
+		s = 2 and j is 0 and w is (1,0)
+		s = 2 and j is 0 and t_b[60] = (-8,24)
+		s = 2 and j is 0 and t_b[62] = (48,-24)
+
+	s = 2 j = 0: w = (-4.37114e-08,-1)
+
+	s is 2 and j is 1
+		s = 2 and j is 1 and k, one index into b, is 1
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 3
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[1] = (52,24)
+		s = 2 and j is 1 and t_b[3] = (52,-24)
+
+		s = 2 and j is 1 and k, one index into b, is 5
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 7
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[5] = (-24,-60)
+		s = 2 and j is 1 and t_b[7] = (-32,20)
+
+		s = 2 and j is 1 and k, one index into b, is 9
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 11
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[9] = (76,-4)
+		s = 2 and j is 1 and t_b[11] = (4,-20)
+
+		s = 2 and j is 1 and k, one index into b, is 13
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 15
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[13] = (-64,-40)
+		s = 2 and j is 1 and t_b[15] = (-16,16)
+
+		s = 2 and j is 1 and k, one index into b, is 17
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 19
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[17] = (36,-20)
+		s = 2 and j is 1 and t_b[19] = (12,-20)
+
+		s = 2 and j is 1 and k, one index into b, is 21
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 23
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[21] = (-32,-48)
+		s = 2 and j is 1 and t_b[23] = (-32,8)
+
+		s = 2 and j is 1 and k, one index into b, is 25
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 27
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[25] = (12,-52)
+		s = 2 and j is 1 and t_b[27] = (-4,-4)
+
+		s = 2 and j is 1 and k, one index into b, is 29
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 31
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[29] = (-56,8)
+		s = 2 and j is 1 and t_b[31] = (-32,32)
+
+		s = 2 and j is 1 and k, one index into b, is 33
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 35
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[33] = (60,-20)
+		s = 2 and j is 1 and t_b[35] = (20,-28)
+
+		s = 2 and j is 1 and k, one index into b, is 37
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 39
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[37] = (-16,-60)
+		s = 2 and j is 1 and t_b[39] = (-8,4)
+
+		s = 2 and j is 1 and k, one index into b, is 41
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 43
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[41] = (32,-28)
+		s = 2 and j is 1 and t_b[43] = (0,-12)
+
+		s = 2 and j is 1 and k, one index into b, is 45
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 47
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[45] = (-44,-36)
+		s = 2 and j is 1 and t_b[47] = (-4,4)
+
+		s = 2 and j is 1 and k, one index into b, is 49
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 51
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[49] = (52,-8)
+		s = 2 and j is 1 and t_b[51] = (-4,-32)
+
+		s = 2 and j is 1 and k, one index into b, is 53
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 55
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[53] = (-60,-28)
+		s = 2 and j is 1 and t_b[55] = (-12,12)
+
+		s = 2 and j is 1 and k, one index into b, is 57
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 59
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[57] = (28,-44)
+		s = 2 and j is 1 and t_b[59] = (-20,-4)
+
+		s = 2 and j is 1 and k, one index into b, is 61
+		s = 2 and j is 1 and m2 is 2
+		s = 2 and j is 1 and k + m2, the other index into t_b, is 63
+		s = 2 and j is 1 and w is (-4.37114e-08,-1)
+		s = 2 and j is 1 and t_b[61] = (-68,12)
+		s = 2 and j is 1 and t_b[63] = (-20,20)
+
+	s = 2 j = 1: w = (-1,8.74228e-08)
+
+	s = 3 m is 8
+	s = 3 m2 is 4
+	-J (-0,-1)
+	s = 3 wm, the exponent, is (0.707107,-0.707107)
+	s is 3 and j is 0
+		s = 3 and j is 0 and k, one index into b, is 0
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 4
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[0] = (-24,-64)
+		s = 3 and j is 0 and t_b[4] = (48,-32)
+
+		s = 3 and j is 0 and k, one index into b, is 8
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 12
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[8] = (-4,-4)
+		s = 3 and j is 0 and t_b[12] = (20,-60)
+
+		s = 3 and j is 0 and k, one index into b, is 16
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 20
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[16] = (4,-12)
+		s = 3 and j is 0 and t_b[20] = (60,28)
+
+		s = 3 and j is 0 and k, one index into b, is 24
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 28
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[24] = (-20,-20)
+		s = 3 and j is 0 and t_b[28] = (-4,-52)
+
+		s = 3 and j is 0 and k, one index into b, is 32
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 36
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[32] = (-24,-68)
+		s = 3 and j is 0 and t_b[36] = (64,-20)
+
+		s = 3 and j is 0 and k, one index into b, is 40
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 44
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[40] = (4,-32)
+		s = 3 and j is 0 and t_b[44] = (-4,-56)
+
+		s = 3 and j is 0 and k, one index into b, is 48
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 52
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[48] = (-44,-24)
+		s = 3 and j is 0 and t_b[52] = (36,-8)
+
+		s = 3 and j is 0 and k, one index into b, is 56
+		s = 3 and j is 0 and m2 is 4
+		s = 3 and j is 0 and k + m2, the other index into t_b, is 60
+		s = 3 and j is 0 and w is (1,0)
+		s = 3 and j is 0 and t_b[56] = (-24,-16)
+		s = 3 and j is 0 and t_b[60] = (-8,-64)
+
+	s = 3 j = 0: w = (0.707107,-0.707107)
+
+	s is 3 and j is 1
+		s = 3 and j is 1 and k, one index into b, is 1
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 5
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[1] = (-7.39697,-1.45584)
+		s = 3 and j is 1 and t_b[5] = (111.397,49.4558)
+
+		s = 3 and j is 1 and k, one index into b, is 9
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 13
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[9] = (2.46089,12.9706)
+		s = 3 and j is 1 and t_b[13] = (149.539,-20.9706)
+
+		s = 3 and j is 1 and k, one index into b, is 17
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 21
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[17] = (-20.5685,-31.3137)
+		s = 3 and j is 1 and t_b[21] = (92.5685,-8.68629)
+
+		s = 3 and j is 1 and k, one index into b, is 25
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 29
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[25] = (-21.9411,-6.74516)
+		s = 3 and j is 1 and t_b[29] = (45.9411,-97.2548)
+
+		s = 3 and j is 1 and k, one index into b, is 33
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 37
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[33] = (6.25988,-51.1127)
+		s = 3 and j is 1 and t_b[37] = (113.74,11.1127)
+
+		s = 3 and j is 1 and k, one index into b, is 41
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 45
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[41] = (-24.5685,-22.3431)
+		s = 3 and j is 1 and t_b[45] = (88.5685,-33.6569)
+
+		s = 3 and j is 1 and k, one index into b, is 49
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 53
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[49] = (-10.2254,14.6274)
+		s = 3 and j is 1 and t_b[53] = (114.225,-30.6274)
+
+		s = 3 and j is 1 and k, one index into b, is 57
+		s = 3 and j is 1 and m2 is 4
+		s = 3 and j is 1 and k + m2, the other index into t_b, is 61
+		s = 3 and j is 1 and w is (0.707107,-0.707107)
+		s = 3 and j is 1 and t_b[57] = (-11.598,12.5685)
+		s = 3 and j is 1 and t_b[61] = (67.598,-100.569)
+
+	s = 3 j = 1: w = (0,-1)
+
+	s is 3 and j is 2
+		s = 3 and j is 2 and k, one index into b, is 2
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 6
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[2] = (20,4)
+		s = 3 and j is 2 and t_b[6] = (-28,-68)
+
+		s = 3 and j is 2 and k, one index into b, is 10
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 14
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[10] = (-12,12)
+		s = 3 and j is 2 and t_b[14] = (-68,4)
+
+		s = 3 and j is 2 and k, one index into b, is 18
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 22
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[18] = (-20,-12)
+		s = 3 and j is 2 and t_b[22] = (-76,-52)
+
+		s = 3 and j is 2 and k, one index into b, is 26
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 30
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[26] = (-4,-52)
+		s = 3 and j is 2 and t_b[30] = (-52,12)
+
+		s = 3 and j is 2 and k, one index into b, is 34
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 38
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[34] = (12,8)
+		s = 3 and j is 2 and t_b[38] = (-84,-48)
+
+		s = 3 and j is 2 and k, one index into b, is 42
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 46
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[42] = (-28,-24)
+		s = 3 and j is 2 and t_b[46] = (-100,32)
+
+		s = 3 and j is 2 and k, one index into b, is 50
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 54
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[50] = (44,-24)
+		s = 3 and j is 2 and t_b[54] = (-68,8)
+
+		s = 3 and j is 2 and k, one index into b, is 58
+		s = 3 and j is 2 and m2 is 4
+		s = 3 and j is 2 and k + m2, the other index into t_b, is 62
+		s = 3 and j is 2 and w is (0,-1)
+		s = 3 and j is 2 and t_b[58] = (-32,-24)
+		s = 3 and j is 2 and t_b[62] = (16,72)
+
+	s = 3 j = 2: w = (-0.707107,-0.707107)
+
+	s is 3 and j is 3
+		s = 3 and j is 3 and k, one index into b, is 3
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 7
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[3] = (88.7695,-15.5147)
+		s = 3 and j is 3 and t_b[7] = (15.2305,-32.4853)
+
+		s = 3 and j is 3 and k, one index into b, is 11
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 15
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[11] = (26.6274,-20)
+		s = 3 and j is 3 and t_b[15] = (-18.6274,-20)
+
+		s = 3 and j is 3 and k, one index into b, is 19
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 23
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[19] = (40.2843,-3.02944)
+		s = 3 and j is 3 and t_b[23] = (-16.2843,-36.9706)
+
+		s = 3 and j is 3 and k, one index into b, is 27
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 31
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[27] = (41.2548,-4)
+		s = 3 and j is 3 and t_b[31] = (-49.2548,-4)
+
+		s = 3 and j is 3 and k, one index into b, is 35
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 39
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[35] = (28.4853,-25.1716)
+		s = 3 and j is 3 and t_b[39] = (11.5147,-30.8284)
+
+		s = 3 and j is 3 and k, one index into b, is 43
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 47
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[43] = (5.65685,-12)
+		s = 3 and j is 3 and t_b[47] = (-5.65685,-12)
+
+		s = 3 and j is 3 and k, one index into b, is 51
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 55
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[51] = (12.9706,-32)
+		s = 3 and j is 3 and t_b[55] = (-20.9706,-32)
+
+		s = 3 and j is 3 and k, one index into b, is 59
+		s = 3 and j is 3 and m2 is 4
+		s = 3 and j is 3 and k + m2, the other index into t_b, is 63
+		s = 3 and j is 3 and w is (-0.707107,-0.707107)
+		s = 3 and j is 3 and t_b[59] = (8.28427,-4)
+		s = 3 and j is 3 and t_b[63] = (-48.2843,-4)
+
+	s = 3 j = 3: w = (-1,0)
+
+	s = 4 m is 16
+	s = 4 m2 is 8
+	-J (-0,-1)
+	s = 4 wm, the exponent, is (0.92388,-0.382683)
+	s is 4 and j is 0
+		s = 4 and j is 0 and k, one index into b, is 0
+		s = 4 and j is 0 and m2 is 8
+		s = 4 and j is 0 and k + m2, the other index into t_b, is 8
+		s = 4 and j is 0 and w is (1,0)
+		s = 4 and j is 0 and t_b[0] = (-28,-68)
+		s = 4 and j is 0 and t_b[8] = (-20,-60)
+
+		s = 4 and j is 0 and k, one index into b, is 16
+		s = 4 and j is 0 and m2 is 8
+		s = 4 and j is 0 and k + m2, the other index into t_b, is 24
+		s = 4 and j is 0 and w is (1,0)
+		s = 4 and j is 0 and t_b[16] = (-16,-32)
+		s = 4 and j is 0 and t_b[24] = (24,8)
+
+		s = 4 and j is 0 and k, one index into b, is 32
+		s = 4 and j is 0 and m2 is 8
+		s = 4 and j is 0 and k + m2, the other index into t_b, is 40
+		s = 4 and j is 0 and w is (1,0)
+		s = 4 and j is 0 and t_b[32] = (-20,-100)
+		s = 4 and j is 0 and t_b[40] = (-28,-36)
+
+		s = 4 and j is 0 and k, one index into b, is 48
+		s = 4 and j is 0 and m2 is 8
+		s = 4 and j is 0 and k + m2, the other index into t_b, is 56
+		s = 4 and j is 0 and w is (1,0)
+		s = 4 and j is 0 and t_b[48] = (-68,-40)
+		s = 4 and j is 0 and t_b[56] = (-20,-8)
+
+	s = 4 j = 0: w = (0.92388,-0.382683)
+
+	s is 4 and j is 1
+		s = 4 and j is 1 and k, one index into b, is 1
+		s = 4 and j is 1 and m2 is 8
+		s = 4 and j is 1 and k + m2, the other index into t_b, is 9
+		s = 4 and j is 1 and w is (0.92388,-0.382683)
+		s = 4 and j is 1 and t_b[1] = (-0.159786,9.58565)
+		s = 4 and j is 1 and t_b[9] = (-14.6342,-12.4973)
+
+		s = 4 and j is 1 and k, one index into b, is 17
+		s = 4 and j is 1 and m2 is 8
+		s = 4 and j is 1 and k + m2, the other index into t_b, is 25
+		s = 4 and j is 1 and w is (0.92388,-0.382683)
+		s = 4 and j is 1 and t_b[17] = (-43.4208,-29.1489)
+		s = 4 and j is 1 and t_b[25] = (2.28367,-33.4785)
+
+		s = 4 and j is 1 and k, one index into b, is 33
+		s = 4 and j is 1 and m2 is 8
+		s = 4 and j is 1 and k + m2, the other index into t_b, is 41
+		s = 4 and j is 1 and w is (0.92388,-0.382683)
+		s = 4 and j is 1 and t_b[33] = (-24.9888,-62.3531)
+		s = 4 and j is 1 and t_b[41] = (37.5086,-39.8723)
+
+		s = 4 and j is 1 and k, one index into b, is 49
+		s = 4 and j is 1 and m2 is 8
+		s = 4 and j is 1 and k + m2, the other index into t_b, is 57
+		s = 4 and j is 1 and w is (0.92388,-0.382683)
+		s = 4 and j is 1 and t_b[49] = (-16.1308,30.6776)
+		s = 4 and j is 1 and t_b[57] = (-4.32004,-1.42276)
+
+	s = 4 j = 1: w = (0.707107,-0.707107)
+
+	s is 4 and j is 2
+		s = 4 and j is 2 and k, one index into b, is 2
+		s = 4 and j is 2 and m2 is 8
+		s = 4 and j is 2 and k + m2, the other index into t_b, is 10
+		s = 4 and j is 2 and w is (0.707107,-0.707107)
+		s = 4 and j is 2 and t_b[2] = (20,20.9706)
+		s = 4 and j is 2 and t_b[10] = (20,-12.9706)
+
+		s = 4 and j is 2 and k, one index into b, is 18
+		s = 4 and j is 2 and m2 is 8
+		s = 4 and j is 2 and k + m2, the other index into t_b, is 26
+		s = 4 and j is 2 and w is (0.707107,-0.707107)
+		s = 4 and j is 2 and t_b[18] = (-59.598,-45.9411)
+		s = 4 and j is 2 and t_b[26] = (19.598,21.9411)
+
+		s = 4 and j is 2 and k, one index into b, is 34
+		s = 4 and j is 2 and m2 is 8
+		s = 4 and j is 2 and k + m2, the other index into t_b, is 42
+		s = 4 and j is 2 and w is (0.707107,-0.707107)
+		s = 4 and j is 2 and t_b[34] = (-24.7696,10.8284)
+		s = 4 and j is 2 and t_b[42] = (48.7696,5.17156)
+
+		s = 4 and j is 2 and k, one index into b, is 50
+		s = 4 and j is 2 and m2 is 8
+		s = 4 and j is 2 and k + m2, the other index into t_b, is 58
+		s = 4 and j is 2 and w is (0.707107,-0.707107)
+		s = 4 and j is 2 and t_b[50] = (4.40202,-18.3431)
+		s = 4 and j is 2 and t_b[58] = (83.598,-29.6569)
+
+	s = 4 j = 2: w = (0.382683,-0.92388)
+
+	s is 4 and j is 3
+		s = 4 and j is 3 and k, one index into b, is 3
+		s = 4 and j is 3 and m2 is 8
+		s = 4 and j is 3 and k + m2, the other index into t_b, is 11
+		s = 4 and j is 3 and w is (0.382683,-0.92388)
+		s = 4 and j is 3 and t_b[3] = (80.4818,-47.7689)
+		s = 4 and j is 3 and t_b[11] = (97.0573,16.7395)
+
+		s = 4 and j is 3 and k, one index into b, is 19
+		s = 4 and j is 3 and m2 is 8
+		s = 4 and j is 3 and k + m2, the other index into t_b, is 27
+		s = 4 and j is 3 and w is (0.382683,-0.92388)
+		s = 4 and j is 3 and t_b[19] = (52.3763,-42.6747)
+		s = 4 and j is 3 and t_b[27] = (28.1923,36.6158)
+
+		s = 4 and j is 3 and k, one index into b, is 35
+		s = 4 and j is 3 and m2 is 8
+		s = 4 and j is 3 and k + m2, the other index into t_b, is 43
+		s = 4 and j is 3 and w is (0.382683,-0.92388)
+		s = 4 and j is 3 and t_b[35] = (19.5635,-34.99)
+		s = 4 and j is 3 and t_b[43] = (37.4071,-15.3531)
+
+		s = 4 and j is 3 and k, one index into b, is 51
+		s = 4 and j is 3 and m2 is 8
+		s = 4 and j is 3 and k + m2, the other index into t_b, is 59
+		s = 4 and j is 3 and w is (0.382683,-0.92388)
+		s = 4 and j is 3 and t_b[51] = (12.4453,-41.1844)
+		s = 4 and j is 3 and t_b[59] = (13.4958,-22.8156)
+
+	s = 4 j = 3: w = (-1.49012e-07,-1)
+
+	s is 4 and j is 4
+		s = 4 and j is 4 and k, one index into b, is 4
+		s = 4 and j is 4 and m2 is 8
+		s = 4 and j is 4 and k + m2, the other index into t_b, is 12
+		s = 4 and j is 4 and w is (-1.49012e-07,-1)
+		s = 4 and j is 4 and t_b[4] = (-12,-52)
+		s = 4 and j is 4 and t_b[12] = (108,-12)
+
+		s = 4 and j is 4 and k, one index into b, is 20
+		s = 4 and j is 4 and m2 is 8
+		s = 4 and j is 4 and k + m2, the other index into t_b, is 28
+		s = 4 and j is 4 and w is (-1.49012e-07,-1)
+		s = 4 and j is 4 and t_b[20] = (8,32)
+		s = 4 and j is 4 and t_b[28] = (112,24)
+
+		s = 4 and j is 4 and k, one index into b, is 36
+		s = 4 and j is 4 and m2 is 8
+		s = 4 and j is 4 and k + m2, the other index into t_b, is 44
+		s = 4 and j is 4 and w is (-1.49012e-07,-1)
+		s = 4 and j is 4 and t_b[36] = (8,-16)
+		s = 4 and j is 4 and t_b[44] = (120,-24)
+
+		s = 4 and j is 4 and k, one index into b, is 52
+		s = 4 and j is 4 and m2 is 8
+		s = 4 and j is 4 and k + m2, the other index into t_b, is 60
+		s = 4 and j is 4 and w is (-1.49012e-07,-1)
+		s = 4 and j is 4 and t_b[52] = (-28,9.53674e-06)
+		s = 4 and j is 4 and t_b[60] = (100,-16)
+
+	s = 4 j = 4: w = (-0.382684,-0.923879)
+
+	s is 4 and j is 5
+		s = 4 and j is 5 and k, one index into b, is 5
+		s = 4 and j is 5 and m2 is 8
+		s = 4 and j is 5 and k + m2, the other index into t_b, is 13
+		s = 4 and j is 5 and w is (-0.382684,-0.923879)
+		s = 4 and j is 5 and t_b[5] = (34.7965,-80.6752)
+		s = 4 and j is 5 and t_b[13] = (187.997,179.587)
+
+		s = 4 and j is 5 and k, one index into b, is 21
+		s = 4 and j is 5 and m2 is 8
+		s = 4 and j is 5 and k + m2, the other index into t_b, is 29
+		s = 4 and j is 5 and w is (-0.382684,-0.923879)
+		s = 4 and j is 5 and t_b[21] = (-14.8641,-13.9125)
+		s = 4 and j is 5 and t_b[29] = (200.001,-3.46006)
+
+		s = 4 and j is 5 and k, one index into b, is 37
+		s = 4 and j is 5 and m2 is 8
+		s = 4 and j is 5 and k + m2, the other index into t_b, is 45
+		s = 4 and j is 5 and w is (-0.382684,-0.923879)
+		s = 4 and j is 5 and t_b[37] = (48.7515,-57.834)
+		s = 4 and j is 5 and t_b[45] = (178.729,80.0594)
+
+		s = 4 and j is 5 and k, one index into b, is 53
+		s = 4 and j is 5 and m2 is 8
+		s = 4 and j is 5 and k + m2, the other index into t_b, is 61
+		s = 4 and j is 5 and w is (-0.382684,-0.923879)
+		s = 4 and j is 5 and t_b[53] = (-4.55645,-54.5939)
+		s = 4 and j is 5 and t_b[61] = (233.007,-6.66097)
+
+	s = 4 j = 5: w = (-0.707107,-0.707107)
+
+	s is 4 and j is 6
+		s = 4 and j is 6 and k, one index into b, is 6
+		s = 4 and j is 6 and m2 is 8
+		s = 4 and j is 6 and k + m2, the other index into t_b, is 14
+		s = 4 and j is 6 and w is (-0.707107,-0.707107)
+		s = 4 and j is 6 and t_b[6] = (22.9117,-22.7452)
+		s = 4 and j is 6 and t_b[14] = (-78.9117,-113.255)
+
+		s = 4 and j is 6 and k, one index into b, is 22
+		s = 4 and j is 6 and m2 is 8
+		s = 4 and j is 6 and k + m2, the other index into t_b, is 30
+		s = 4 and j is 6 and w is (-0.707107,-0.707107)
+		s = 4 and j is 6 and t_b[22] = (-30.7452,-23.7157)
+		s = 4 and j is 6 and t_b[30] = (-121.255,-80.2843)
+
+		s = 4 and j is 6 and k, one index into b, is 38
+		s = 4 and j is 6 and m2 is 8
+		s = 4 and j is 6 and k + m2, the other index into t_b, is 46
+		s = 4 and j is 6 and w is (-0.707107,-0.707107)
+		s = 4 and j is 6 and t_b[38] = (9.3381,0.0832443)
+		s = 4 and j is 6 and t_b[46] = (-177.338,-96.0832)
+
+		s = 4 and j is 6 and k, one index into b, is 54
+		s = 4 and j is 6 and m2 is 8
+		s = 4 and j is 6 and k + m2, the other index into t_b, is 62
+		s = 4 and j is 6 and w is (-0.707107,-0.707107)
+		s = 4 and j is 6 and t_b[54] = (-28.402,-54.2254)
+		s = 4 and j is 6 and t_b[62] = (-107.598,70.2254)
+
+	s = 4 j = 6: w = (-0.92388,-0.382683)
+
+	s is 4 and j is 7
+		s = 4 and j is 7 and k, one index into b, is 7
+		s = 4 and j is 7 and m2 is 8
+		s = 4 and j is 7 and k + m2, the other index into t_b, is 15
+		s = 4 and j is 7 and w is (-0.92388,-0.382683)
+		s = 4 and j is 7 and t_b[7] = (24.7863,-6.87929)
+		s = 4 and j is 7 and t_b[15] = (5.67463,-58.0913)
+
+		s = 4 and j is 7 and k, one index into b, is 23
+		s = 4 and j is 7 and m2 is 8
+		s = 4 and j is 7 and k + m2, the other index into t_b, is 31
+		s = 4 and j is 7 and w is (-0.92388,-0.382683)
+		s = 4 and j is 7 and t_b[23] = (27.6905,-14.426)
+		s = 4 and j is 7 and t_b[31] = (-60.2591,-59.5151)
+
+		s = 4 and j is 7 and k, one index into b, is 39
+		s = 4 and j is 7 and m2 is 8
+		s = 4 and j is 7 and k + m2, the other index into t_b, is 47
+		s = 4 and j is 7 and w is (-0.92388,-0.382683)
+		s = 4 and j is 7 and t_b[39] = (12.1488,-17.5771)
+		s = 4 and j is 7 and t_b[47] = (10.8807,-44.0798)
+
+		s = 4 and j is 7 and k, one index into b, is 55
+		s = 4 and j is 7 and m2 is 8
+		s = 4 and j is 7 and k + m2, the other index into t_b, is 63
+		s = 4 and j is 7 and w is (-0.92388,-0.382683)
+		s = 4 and j is 7 and t_b[55] = (22.1076,-9.82691)
+		s = 4 and j is 7 and t_b[63] = (-64.0487,-54.1731)
+
+	s = 4 j = 7: w = (-1,3.57628e-07)
+
+	s = 5 m is 32
+	s = 5 m2 is 16
+	-J (-0,-1)
+	s = 5 wm, the exponent, is (0.980785,-0.19509)
+	s is 5 and j is 0
+		s = 5 and j is 0 and k, one index into b, is 0
+		s = 5 and j is 0 and m2 is 16
+		s = 5 and j is 0 and k + m2, the other index into t_b, is 16
+		s = 5 and j is 0 and w is (1,0)
+		s = 5 and j is 0 and t_b[0] = (-44,-100)
+		s = 5 and j is 0 and t_b[16] = (-12,-36)
+
+		s = 5 and j is 0 and k, one index into b, is 32
+		s = 5 and j is 0 and m2 is 16
+		s = 5 and j is 0 and k + m2, the other index into t_b, is 48
+		s = 5 and j is 0 and w is (1,0)
+		s = 5 and j is 0 and t_b[32] = (-88,-140)
+		s = 5 and j is 0 and t_b[48] = (48,-60)
+
+	s = 5 j = 0: w = (0.980785,-0.19509)
+
+	s is 5 and j is 1
+		s = 5 and j is 1 and k, one index into b, is 1
+		s = 5 and j is 1 and m2 is 16
+		s = 5 and j is 1 and k + m2, the other index into t_b, is 17
+		s = 5 and j is 1 and w is (0.980785,-0.19509)
+		s = 5 and j is 1 and t_b[1] = (-48.4329,-10.5322)
+		s = 5 and j is 1 and t_b[17] = (48.1133,29.7035)
+
+		s = 5 and j is 1 and k, one index into b, is 33
+		s = 5 and j is 1 and m2 is 16
+		s = 5 and j is 1 and k + m2, the other index into t_b, is 49
+		s = 5 and j is 1 and w is (0.980785,-0.19509)
+		s = 5 and j is 1 and t_b[33] = (-34.8247,-29.118)
+		s = 5 and j is 1 and t_b[49] = (-15.1529,-95.5882)
+
+	s = 5 j = 1: w = (0.923879,-0.382683)
+
+	s is 5 and j is 2
+		s = 5 and j is 2 and k, one index into b, is 2
+		s = 5 and j is 2 and m2 is 16
+		s = 5 and j is 2 and k + m2, the other index into t_b, is 18
+		s = 5 and j is 2 and w is (0.923879,-0.382683)
+		s = 5 and j is 2 and t_b[2] = (-52.6423,1.33366)
+		s = 5 and j is 2 and t_b[18] = (92.6423,40.6075)
+
+		s = 5 and j is 2 and k, one index into b, is 34
+		s = 5 and j is 2 and m2 is 16
+		s = 5 and j is 2 and k + m2, the other index into t_b, is 50
+		s = 5 and j is 2 and w is (0.923879,-0.382683)
+		s = 5 and j is 2 and t_b[34] = (-27.7222,-7.803)
+		s = 5 and j is 2 and t_b[50] = (-21.8169,29.4599)
+
+	s = 5 j = 2: w = (0.831469,-0.55557)
+
+	s is 5 and j is 3
+		s = 5 and j is 3 and k, one index into b, is 3
+		s = 5 and j is 3 and m2 is 16
+		s = 5 and j is 3 and k + m2, the other index into t_b, is 19
+		s = 5 and j is 3 and w is (0.831469,-0.55557)
+		s = 5 and j is 3 and t_b[3] = (100.322,-112.35)
+		s = 5 and j is 3 and t_b[19] = (60.6413,16.8125)
+
+		s = 5 and j is 3 and k, one index into b, is 35
+		s = 5 and j is 3 and m2 is 16
+		s = 5 and j is 3 and k + m2, the other index into t_b, is 51
+		s = 5 and j is 3 and w is (0.831469,-0.55557)
+		s = 5 and j is 3 and t_b[35] = (7.03057,-76.1478)
+		s = 5 and j is 3 and t_b[51] = (32.0965,6.16778)
+
+	s = 5 j = 3: w = (0.707107,-0.707107)
+
+	s is 5 and j is 4
+		s = 5 and j is 4 and k, one index into b, is 4
+		s = 5 and j is 4 and m2 is 16
+		s = 5 and j is 4 and k + m2, the other index into t_b, is 20
+		s = 5 and j is 4 and w is (0.707107,-0.707107)
+		s = 5 and j is 4 and t_b[4] = (16.2843,-35.0294)
+		s = 5 and j is 4 and t_b[20] = (-40.2843,-68.9706)
+
+		s = 5 and j is 4 and k, one index into b, is 36
+		s = 5 and j is 4 and m2 is 16
+		s = 5 and j is 4 and k + m2, the other index into t_b, is 52
+		s = 5 and j is 4 and w is (0.707107,-0.707107)
+		s = 5 and j is 4 and t_b[36] = (-11.799,3.79901)
+		s = 5 and j is 4 and t_b[52] = (27.799,-35.799)
+
+	s = 5 j = 4: w = (0.55557,-0.83147)
+
+	s is 5 and j is 5
+		s = 5 and j is 5 and k, one index into b, is 5
+		s = 5 and j is 5 and m2 is 16
+		s = 5 and j is 5 and k + m2, the other index into t_b, is 21
+		s = 5 and j is 5 and w is (0.55557,-0.83147)
+		s = 5 and j is 5 and t_b[5] = (14.9706,-76.0455)
+		s = 5 and j is 5 and t_b[21] = (54.6224,-85.3049)
+
+		s = 5 and j is 5 and k, one index into b, is 37
+		s = 5 and j is 5 and m2 is 16
+		s = 5 and j is 5 and k + m2, the other index into t_b, is 53
+		s = 5 and j is 5 and w is (0.55557,-0.83147)
+		s = 5 and j is 5 and t_b[37] = (0.826946,-84.3762)
+		s = 5 and j is 5 and t_b[53] = (96.6761,-31.2919)
+
+	s = 5 j = 5: w = (0.382683,-0.923879)
+
+	s is 5 and j is 6
+		s = 5 and j is 6 and k, one index into b, is 6
+		s = 5 and j is 6 and m2 is 16
+		s = 5 and j is 6 and k + m2, the other index into t_b, is 22
+		s = 5 and j is 6 and w is (0.382683,-0.923879)
+		s = 5 and j is 6 and t_b[6] = (-10.7644,-3.41597)
+		s = 5 and j is 6 and t_b[22] = (56.5878,-42.0744)
+
+		s = 5 and j is 6 and k, one index into b, is 38
+		s = 5 and j is 6 and m2 is 16
+		s = 5 and j is 6 and k + m2, the other index into t_b, is 54
+		s = 5 and j is 6 and w is (0.382683,-0.923879)
+		s = 5 and j is 6 and t_b[38] = (-51.6286,5.57215)
+		s = 5 and j is 6 and t_b[54] = (70.3048,-5.40566)
+
+	s = 5 j = 6: w = (0.19509,-0.980785)
+
+	s is 5 and j is 7
+		s = 5 and j is 7 and k, one index into b, is 7
+		s = 5 and j is 7 and m2 is 16
+		s = 5 and j is 7 and k + m2, the other index into t_b, is 23
+		s = 5 and j is 7 and w is (0.19509,-0.980785)
+		s = 5 and j is 7 and t_b[7] = (16.0396,-36.8521)
+		s = 5 and j is 7 and t_b[23] = (33.533,23.0936)
+
+		s = 5 and j is 7 and k, one index into b, is 39
+		s = 5 and j is 7 and m2 is 16
+		s = 5 and j is 7 and k + m2, the other index into t_b, is 55
+		s = 5 and j is 7 and w is (0.19509,-0.980785)
+		s = 5 and j is 7 and t_b[39] = (6.82366,-41.177)
+		s = 5 and j is 7 and t_b[55] = (17.4739,6.02281)
+
+	s = 5 j = 7: w = (-1.63913e-07,-1)
+
+	s is 5 and j is 8
+		s = 5 and j is 8 and k, one index into b, is 8
+		s = 5 and j is 8 and m2 is 16
+		s = 5 and j is 8 and k + m2, the other index into t_b, is 24
+		s = 5 and j is 8 and w is (-1.63913e-07,-1)
+		s = 5 and j is 8 and t_b[8] = (-12,-84)
+		s = 5 and j is 8 and t_b[24] = (-28,-36)
+
+		s = 5 and j is 8 and k, one index into b, is 40
+		s = 5 and j is 8 and m2 is 16
+		s = 5 and j is 8 and k + m2, the other index into t_b, is 56
+		s = 5 and j is 8 and w is (-1.63913e-07,-1)
+		s = 5 and j is 8 and t_b[40] = (-36,-16)
+		s = 5 and j is 8 and t_b[56] = (-20,-56)
+
+	s = 5 j = 8: w = (-0.19509,-0.980785)
+
+	s is 5 and j is 9
+		s = 5 and j is 9 and k, one index into b, is 9
+		s = 5 and j is 9 and m2 is 16
+		s = 5 and j is 9 and k + m2, the other index into t_b, is 25
+		s = 5 and j is 9 and w is (-0.19509,-0.980785)
+		s = 5 and j is 9 and t_b[9] = (-47.9149,-8.20579)
+		s = 5 and j is 9 and t_b[25] = (18.6466,-16.7889)
+
+		s = 5 and j is 9 and k, one index into b, is 41
+		s = 5 and j is 9 and m2 is 16
+		s = 5 and j is 9 and k + m2, the other index into t_b, is 57
+		s = 5 and j is 9 and w is (-0.19509,-0.980785)
+		s = 5 and j is 9 and t_b[41] = (36.956,-35.3577)
+		s = 5 and j is 9 and t_b[57] = (38.0612,-44.3869)
+
+	s = 5 j = 9: w = (-0.382683,-0.923879)
+
+	s is 5 and j is 10
+		s = 5 and j is 10 and k, one index into b, is 10
+		s = 5 and j is 10 and m2 is 16
+		s = 5 and j is 10 and k + m2, the other index into t_b, is 26
+		s = 5 and j is 10 and w is (-0.382683,-0.923879)
+		s = 5 and j is 10 and t_b[10] = (32.7711,-39.4732)
+		s = 5 and j is 10 and t_b[26] = (7.22888,13.5321)
+
+		s = 5 and j is 10 and k, one index into b, is 42
+		s = 5 and j is 10 and m2 is 16
+		s = 5 and j is 10 and k + m2, the other index into t_b, is 58
+		s = 5 and j is 10 and w is (-0.382683,-0.923879)
+		s = 5 and j is 10 and t_b[42] = (-10.6214,-60.7137)
+		s = 5 and j is 10 and t_b[58] = (108.16,71.0568)
+
+	s = 5 j = 10: w = (-0.55557,-0.831469)
+
+	s is 5 and j is 11
+		s = 5 and j is 11 and k, one index into b, is 11
+		s = 5 and j is 11 and m2 is 16
+		s = 5 and j is 11 and k + m2, the other index into t_b, is 27
+		s = 5 and j is 11 and w is (-0.55557,-0.831469)
+		s = 5 and j is 11 and t_b[11] = (111.839,-27.0442)
+		s = 5 and j is 11 and t_b[27] = (82.2751,60.5231)
+
+		s = 5 and j is 11 and k, one index into b, is 43
+		s = 5 and j is 11 and m2 is 16
+		s = 5 and j is 11 and k + m2, the other index into t_b, is 59
+		s = 5 and j is 11 and w is (-0.55557,-0.831469)
+		s = 5 and j is 11 and t_b[43] = (10.9387,-13.8988)
+		s = 5 and j is 11 and t_b[59] = (63.8754,-16.8074)
+
+	s = 5 j = 11: w = (-0.707107,-0.707106)
+
+	s is 5 and j is 12
+		s = 5 and j is 12 and k, one index into b, is 12
+		s = 5 and j is 12 and m2 is 16
+		s = 5 and j is 12 and k + m2, the other index into t_b, is 28
+		s = 5 and j is 12 and w is (-0.707107,-0.707106)
+		s = 5 and j is 12 and t_b[12] = (45.7746,-108.166)
+		s = 5 and j is 12 and t_b[28] = (170.225,84.1665)
+
+		s = 5 and j is 12 and k, one index into b, is 44
+		s = 5 and j is 12 and m2 is 16
+		s = 5 and j is 12 and k + m2, the other index into t_b, is 60
+		s = 5 and j is 12 and w is (-0.707107,-0.707106)
+		s = 5 and j is 12 and t_b[44] = (37.9756,-83.3969)
+		s = 5 and j is 12 and t_b[60] = (202.024,35.3969)
+
+	s = 5 j = 12: w = (-0.831469,-0.55557)
+
+	s is 5 and j is 13
+		s = 5 and j is 13 and k, one index into b, is 13
+		s = 5 and j is 13 and m2 is 16
+		s = 5 and j is 13 and k + m2, the other index into t_b, is 29
+		s = 5 and j is 13 and w is (-0.831469,-0.55557)
+		s = 5 and j is 13 and t_b[13] = (19.7802,71.3492)
+		s = 5 and j is 13 and t_b[29] = (356.215,287.825)
+
+		s = 5 and j is 13 and k, one index into b, is 45
+		s = 5 and j is 13 and m2 is 16
+		s = 5 and j is 13 and k + m2, the other index into t_b, is 61
+		s = 5 and j is 13 and w is (-0.831469,-0.55557)
+		s = 5 and j is 13 and t_b[45] = (-18.7103,-43.854)
+		s = 5 and j is 13 and t_b[61] = (376.168,203.973)
+
+	s = 5 j = 13: w = (-0.923879,-0.382683)
+
+	s is 5 and j is 14
+		s = 5 and j is 14 and k, one index into b, is 14
+		s = 5 and j is 14 and m2 is 16
+		s = 5 and j is 14 and k + m2, the other index into t_b, is 30
+		s = 5 and j is 14 and w is (-0.923879,-0.382683)
+		s = 5 and j is 14 and t_b[14] = (2.38971,7.32028)
+		s = 5 and j is 14 and t_b[30] = (-160.213,-233.83)
+
+		s = 5 and j is 14 and k, one index into b, is 46
+		s = 5 and j is 14 and m2 is 16
+		s = 5 and j is 14 and k + m2, the other index into t_b, is 62
+		s = 5 and j is 14 and w is (-0.923879,-0.382683)
+		s = 5 and j is 14 and t_b[46] = (-51.0565,-119.787)
+		s = 5 and j is 14 and t_b[62] = (-303.62,-72.3794)
+
+	s = 5 j = 14: w = (-0.980785,-0.19509)
+
+	s is 5 and j is 15
+		s = 5 and j is 15 and k, one index into b, is 15
+		s = 5 and j is 15 and m2 is 16
+		s = 5 and j is 15 and k + m2, the other index into t_b, is 31
+		s = 5 and j is 15 and w is (-0.980785,-0.19509)
+		s = 5 and j is 15 and t_b[15] = (53.165,12.0361)
+		s = 5 and j is 15 and t_b[31] = (-41.8158,-128.219)
+
+		s = 5 and j is 15 and k, one index into b, is 47
+		s = 5 and j is 15 and m2 is 16
+		s = 5 and j is 15 and k + m2, the other index into t_b, is 63
+		s = 5 and j is 15 and w is (-0.980785,-0.19509)
+		s = 5 and j is 15 and t_b[47] = (63.13,21.5476)
+		s = 5 and j is 15 and t_b[63] = (-41.3687,-109.707)
+
+	s = 5 j = 15: w = (-0.999999,3.27826e-07)
+
+	s = 6 m is 64
+	s = 6 m2 is 32
+	-J (-0,-1)
+	s = 6 wm, the exponent, is (0.995185,-0.0980171)
+	s is 6 and j is 0
+		s = 6 and j is 0 and k, one index into b, is 0
+		s = 6 and j is 0 and m2 is 32
+		s = 6 and j is 0 and k + m2, the other index into t_b, is 32
+		s = 6 and j is 0 and w is (1,0)
+		s = 6 and j is 0 and t_b[0] = (-132,-240)
+		s = 6 and j is 0 and t_b[32] = (44,40)
+
+	s = 6 j = 0: w = (0.995185,-0.0980171)
+
+	s is 6 and j is 1
+		s = 6 and j is 1 and k, one index into b, is 1
+		s = 6 and j is 1 and m2 is 32
+		s = 6 and j is 1 and k + m2, the other index into t_b, is 33
+		s = 6 and j is 1 and w is (0.995185,-0.0980171)
+		s = 6 and j is 1 and t_b[1] = (-85.944,-36.0966)
+		s = 6 and j is 1 and t_b[33] = (-10.9218,15.0322)
+
+	s = 6 j = 1: w = (0.980785,-0.19509)
+
+	s is 6 and j is 2
+		s = 6 and j is 2 and k, one index into b, is 2
+		s = 6 and j is 2 and m2 is 32
+		s = 6 and j is 2 and k + m2, the other index into t_b, is 34
+		s = 6 and j is 2 and w is (0.980785,-0.19509)
+		s = 6 and j is 2 and t_b[2] = (-81.3541,-0.911066)
+		s = 6 and j is 2 and t_b[34] = (-23.9304,3.57839)
+
+	s = 6 j = 2: w = (0.95694,-0.290285)
+
+	s is 6 and j is 3
+		s = 6 and j is 3 and k, one index into b, is 3
+		s = 6 and j is 3 and m2 is 32
+		s = 6 and j is 3 and k + m2, the other index into t_b, is 35
+		s = 6 and j is 3 and w is (0.95694,-0.290285)
+		s = 6 and j is 3 and t_b[3] = (84.9456,-187.26)
+		s = 6 and j is 3 and t_b[35] = (115.699,-37.4405)
+
+	s = 6 j = 3: w = (0.92388,-0.382683)
+
+	s is 6 and j is 4
+		s = 6 and j is 4 and k, one index into b, is 4
+		s = 6 and j is 4 and m2 is 32
+		s = 6 and j is 4 and k + m2, the other index into t_b, is 36
+		s = 6 and j is 4 and w is (0.92388,-0.382683)
+		s = 6 and j is 4 and t_b[4] = (6.83726,-27.0043)
+		s = 6 and j is 4 and t_b[36] = (25.7313,-43.0545)
+
+	s = 6 j = 4: w = (0.881921,-0.471397)
+
+	s is 6 and j is 5
+		s = 6 and j is 5 and k, one index into b, is 5
+		s = 6 and j is 5 and m2 is 32
+		s = 6 and j is 5 and k + m2, the other index into t_b, is 37
+		s = 6 and j is 5 and w is (0.881921,-0.471397)
+		s = 6 and j is 5 and t_b[5] = (-24.0747,-150.848)
+		s = 6 and j is 5 and t_b[37] = (54.016,-1.24253)
+
+	s = 6 j = 5: w = (0.83147,-0.55557)
+
+	s is 6 and j is 6
+		s = 6 and j is 6 and k, one index into b, is 6
+		s = 6 and j is 6 and m2 is 32
+		s = 6 and j is 6 and k + m2, the other index into t_b, is 38
+		s = 6 and j is 6 and w is (0.83147,-0.55557)
+		s = 6 and j is 6 and t_b[6] = (-50.5963,29.9004)
+		s = 6 and j is 6 and t_b[38] = (29.0675,-36.7324)
+
+	s = 6 j = 6: w = (0.77301,-0.634393)
+
+	s is 6 and j is 7
+		s = 6 and j is 7 and k, one index into b, is 7
+		s = 6 and j is 7 and m2 is 32
+		s = 6 and j is 7 and k + m2, the other index into t_b, is 39
+		s = 6 and j is 7 and w is (0.77301,-0.634393)
+		s = 6 and j is 7 and t_b[7] = (-4.80807,-73.0113)
+		s = 6 and j is 7 and t_b[39] = (36.8872,-0.693012)
+
+	s = 6 j = 7: w = (0.707107,-0.707107)
+
+	s is 6 and j is 8
+		s = 6 and j is 8 and k, one index into b, is 8
+		s = 6 and j is 8 and m2 is 32
+		s = 6 and j is 8 and k + m2, the other index into t_b, is 40
+		s = 6 and j is 8 and w is (0.707107,-0.707107)
+		s = 6 and j is 8 and t_b[8] = (-48.7696,-69.8579)
+		s = 6 and j is 8 and t_b[40] = (24.7695,-98.1421)
+
+	s = 6 j = 8: w = (0.634393,-0.77301)
+
+	s is 6 and j is 9
+		s = 6 and j is 9 and k, one index into b, is 9
+		s = 6 and j is 9 and m2 is 32
+		s = 6 and j is 9 and k + m2, the other index into t_b, is 41
+		s = 6 and j is 9 and w is (0.634393,-0.77301)
+		s = 6 and j is 9 and t_b[9] = (-51.8021,-59.2038)
+		s = 6 and j is 9 and t_b[41] = (-44.0276,42.7923)
+
+	s = 6 j = 9: w = (0.55557,-0.83147)
+
+	s is 6 and j is 10
+		s = 6 and j is 10 and k, one index into b, is 10
+		s = 6 and j is 10 and m2 is 32
+		s = 6 and j is 10 and k + m2, the other index into t_b, is 42
+		s = 6 and j is 10 and w is (0.55557,-0.83147)
+		s = 6 and j is 10 and t_b[10] = (-23.6114,-64.3726)
+		s = 6 and j is 10 and t_b[42] = (89.1536,-14.5739)
+
+	s = 6 j = 10: w = (0.471397,-0.881921)
+
+	s is 6 and j is 11
+		s = 6 and j is 11 and k, one index into b, is 11
+		s = 6 and j is 11 and m2 is 32
+		s = 6 and j is 11 and k + m2, the other index into t_b, is 43
+		s = 6 and j is 11 and w is (0.471397,-0.881921)
+		s = 6 and j is 11 and t_b[11] = (104.738,-43.2431)
+		s = 6 and j is 11 and t_b[43] = (118.941,-10.8452)
+
+	s = 6 j = 11: w = (0.382683,-0.923879)
+
+	s is 6 and j is 12
+		s = 6 and j is 12 and k, one index into b, is 12
+		s = 6 and j is 12 and m2 is 32
+		s = 6 and j is 12 and k + m2, the other index into t_b, is 44
+		s = 6 and j is 12 and w is (0.382683,-0.923879)
+		s = 6 and j is 12 and t_b[12] = (-16.7415,-175.166)
+		s = 6 and j is 12 and t_b[44] = (108.291,-41.167)
+
+	s = 6 j = 12: w = (0.290285,-0.95694)
+
+	s is 6 and j is 13
+		s = 6 and j is 13 and k, one index into b, is 13
+		s = 6 and j is 13 and m2 is 32
+		s = 6 and j is 13 and k + m2, the other index into t_b, is 45
+		s = 6 and j is 13 and w is (0.290285,-0.95694)
+		s = 6 and j is 13 and t_b[13] = (-27.6167,76.5237)
+		s = 6 and j is 13 and t_b[45] = (67.1772,66.1747)
+
+	s = 6 j = 13: w = (0.19509,-0.980785)
+
+	s is 6 and j is 14
+		s = 6 and j is 14 and k, one index into b, is 14
+		s = 6 and j is 14 and m2 is 32
+		s = 6 and j is 14 and k + m2, the other index into t_b, is 46
+		s = 6 and j is 14 and w is (0.19509,-0.980785)
+		s = 6 and j is 14 and t_b[14] = (-125.056,34.0265)
+		s = 6 and j is 14 and t_b[46] = (129.836,-19.3859)
+
+	s = 6 j = 14: w = (0.0980171,-0.995185)
+
+	s is 6 and j is 15
+		s = 6 and j is 15 and k, one index into b, is 15
+		s = 6 and j is 15 and m2 is 32
+		s = 6 and j is 15 and k + m2, the other index into t_b, is 47
+		s = 6 and j is 15 and w is (0.0980171,-0.995185)
+		s = 6 and j is 15 and t_b[15] = (80.7967,-48.6778)
+		s = 6 and j is 15 and t_b[47] = (25.5333,72.7501)
+
+	s = 6 j = 15: w = (-6.70552e-08,-1)
+
+	s is 6 and j is 16
+		s = 6 and j is 16 and k, one index into b, is 16
+		s = 6 and j is 16 and m2 is 32
+		s = 6 and j is 16 and k + m2, the other index into t_b, is 48
+		s = 6 and j is 16 and w is (-6.70552e-08,-1)
+		s = 6 and j is 16 and t_b[16] = (-72,-84)
+		s = 6 and j is 16 and t_b[48] = (48,12)
+
+	s = 6 j = 16: w = (-0.0980172,-0.995185)
+
+	s is 6 and j is 17
+		s = 6 and j is 17 and k, one index into b, is 17
+		s = 6 and j is 17 and m2 is 32
+		s = 6 and j is 17 and k + m2, the other index into t_b, is 49
+		s = 6 and j is 17 and w is (-0.0980172,-0.995185)
+		s = 6 and j is 17 and t_b[17] = (-45.5293,54.1528)
+		s = 6 and j is 17 and t_b[49] = (141.756,5.25426)
+
+	s = 6 j = 17: w = (-0.19509,-0.980785)
+
+	s is 6 and j is 18
+		s = 6 and j is 18 and k, one index into b, is 18
+		s = 6 and j is 18 and m2 is 32
+		s = 6 and j is 18 and k + m2, the other index into t_b, is 50
+		s = 6 and j is 18 and w is (-0.19509,-0.980785)
+		s = 6 and j is 18 and t_b[18] = (125.792,56.2578)
+		s = 6 and j is 18 and t_b[50] = (59.4922,24.9571)
+
+	s = 6 j = 18: w = (-0.290285,-0.95694)
+
+	s is 6 and j is 19
+		s = 6 and j is 19 and k, one index into b, is 19
+		s = 6 and j is 19 and m2 is 32
+		s = 6 and j is 19 and k + m2, the other index into t_b, is 51
+		s = 6 and j is 19 and w is (-0.290285,-0.95694)
+		s = 6 and j is 19 and t_b[19] = (57.2264,-15.6923)
+		s = 6 and j is 19 and t_b[51] = (64.0562,49.3173)
+
+	s = 6 j = 19: w = (-0.382683,-0.923879)
+
+	s is 6 and j is 20
+		s = 6 and j is 20 and k, one index into b, is 20
+		s = 6 and j is 20 and m2 is 32
+		s = 6 and j is 20 and k + m2, the other index into t_b, is 52
+		s = 6 and j is 20 and w is (-0.382683,-0.923879)
+		s = 6 and j is 20 and t_b[20] = (-83.9964,-80.9538)
+		s = 6 and j is 20 and t_b[52] = (3.42788,-56.9873)
+
+	s = 6 j = 20: w = (-0.471397,-0.881921)
+
+	s is 6 and j is 21
+		s = 6 and j is 21 and k, one index into b, is 21
+		s = 6 and j is 21 and m2 is 32
+		s = 6 and j is 21 and k + m2, the other index into t_b, is 53
+		s = 6 and j is 21 and w is (-0.471397,-0.881921)
+		s = 6 and j is 21 and t_b[21] = (-18.5473,-155.815)
+		s = 6 and j is 21 and t_b[53] = (127.792,-14.7951)
+
+	s = 6 j = 21: w = (-0.55557,-0.831469)
+
+	s is 6 and j is 22
+		s = 6 and j is 22 and k, one index into b, is 22
+		s = 6 and j is 22 and m2 is 32
+		s = 6 and j is 22 and k + m2, the other index into t_b, is 54
+		s = 6 and j is 22 and w is (-0.55557,-0.831469)
+		s = 6 and j is 22 and t_b[22] = (13.0339,-97.5275)
+		s = 6 and j is 22 and t_b[54] = (100.142,13.3787)
+
+	s = 6 j = 22: w = (-0.634393,-0.77301)
+
+	s is 6 and j is 23
+		s = 6 and j is 23 and k, one index into b, is 23
+		s = 6 and j is 23 and m2 is 32
+		s = 6 and j is 23 and k + m2, the other index into t_b, is 55
+		s = 6 and j is 23 and w is (-0.634393,-0.77301)
+		s = 6 and j is 23 and t_b[23] = (27.1034,5.76522)
+		s = 6 and j is 23 and t_b[55] = (39.9626,40.4219)
+
+	s = 6 j = 23: w = (-0.707107,-0.707107)
+
+	s is 6 and j is 24
+		s = 6 and j is 24 and k, one index into b, is 24
+		s = 6 and j is 24 and m2 is 32
+		s = 6 and j is 24 and k + m2, the other index into t_b, is 56
+		s = 6 and j is 24 and w is (-0.707107,-0.707107)
+		s = 6 and j is 24 and t_b[24] = (-53.4558,17.7401)
+		s = 6 and j is 24 and t_b[56] = (-2.54417,-89.7401)
+
+	s = 6 j = 24: w = (-0.77301,-0.634393)
+
+	s is 6 and j is 25
+		s = 6 and j is 25 and k, one index into b, is 25
+		s = 6 and j is 25 and m2 is 32
+		s = 6 and j is 25 and k + m2, the other index into t_b, is 57
+		s = 6 and j is 25 and w is (-0.77301,-0.634393)
+		s = 6 and j is 25 and t_b[25] = (-38.9339,-6.62313)
+		s = 6 and j is 25 and t_b[57] = (76.227,-26.9546)
+
+	s = 6 j = 25: w = (-0.83147,-0.55557)
+
+	s is 6 and j is 26
+		s = 6 and j is 26 and k, one index into b, is 26
+		s = 6 and j is 26 and m2 is 32
+		s = 6 and j is 26 and k + m2, the other index into t_b, is 58
+		s = 6 and j is 26 and w is (-0.83147,-0.55557)
+		s = 6 and j is 26 and t_b[26] = (-43.2262,-105.64)
+		s = 6 and j is 26 and t_b[58] = (57.684,132.704)
+
+	s = 6 j = 26: w = (-0.881921,-0.471397)
+
+	s is 6 and j is 27
+		s = 6 and j is 27 and k, one index into b, is 27
+		s = 6 and j is 27 and m2 is 32
+		s = 6 and j is 27 and k + m2, the other index into t_b, is 59
+		s = 6 and j is 27 and w is (-0.881921,-0.471397)
+		s = 6 and j is 27 and t_b[27] = (18.0191,45.2353)
+		s = 6 and j is 27 and t_b[59] = (146.531,75.8109)
+
+	s = 6 j = 27: w = (-0.923879,-0.382683)
+
+	s is 6 and j is 28
+		s = 6 and j is 28 and k, one index into b, is 28
+		s = 6 and j is 28 and m2 is 32
+		s = 6 and j is 28 and k + m2, the other index into t_b, is 60
+		s = 6 and j is 28 and w is (-0.923879,-0.382683)
+		s = 6 and j is 28 and t_b[28] = (-2.87494,-25.8474)
+		s = 6 and j is 28 and t_b[60] = (343.326,194.18)
+
+	s = 6 j = 28: w = (-0.95694,-0.290284)
+
+	s is 6 and j is 29
+		s = 6 and j is 29 and k, one index into b, is 29
+		s = 6 and j is 29 and m2 is 32
+		s = 6 and j is 29 and k + m2, the other index into t_b, is 61
+		s = 6 and j is 29 and w is (-0.95694,-0.290284)
+		s = 6 and j is 29 and t_b[29] = (55.4547,-16.5609)
+		s = 6 and j is 29 and t_b[61] = (656.974,592.21)
+
+	s = 6 j = 29: w = (-0.980785,-0.19509)
+
+	s is 6 and j is 30
+		s = 6 and j is 30 and k, one index into b, is 30
+		s = 6 and j is 30 and m2 is 32
+		s = 6 and j is 30 and k + m2, the other index into t_b, is 62
+		s = 6 and j is 30 and w is (-0.980785,-0.19509)
+		s = 6 and j is 30 and t_b[30] = (123.452,-103.608)
+		s = 6 and j is 30 and t_b[62] = (-443.878,-364.052)
+
+	s = 6 j = 30: w = (-0.995185,-0.0980169)
+
+	s is 6 and j is 31
+		s = 6 and j is 31 and k, one index into b, is 31
+		s = 6 and j is 31 and m2 is 32
+		s = 6 and j is 31 and k + m2, the other index into t_b, is 63
+		s = 6 and j is 31 and w is (-0.995185,-0.0980169)
+		s = 6 and j is 31 and t_b[31] = (-11.3995,-14.985)
+		s = 6 and j is 31 and t_b[63] = (-72.2321,-241.452)
+
+	s = 6 j = 31: w = (-1,1.78814e-07)
+
