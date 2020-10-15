@@ -8,6 +8,8 @@ num_bits = 6
 fft_size = 1 << num_bits
 
 def gen_ws():
+   # Empirically discovered value
+   # It is possible to calculate this
    max_i = 192
    i = 0
    print("#pragma once\n\n")
@@ -22,7 +24,7 @@ def gen_ws():
       for j in range(m2):
          for k in range(j,fft_size,m):
             print("\t{{{:.12f},{:.12f}}}{}".format(w.real, w.imag,
-               ("", ",")[i < max_i-1 ]))
+               ("", ",")[i < max_i-1]))
             i = i + 1
          w = w * wm
       # end of for j in range(m2):

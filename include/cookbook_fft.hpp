@@ -111,17 +111,16 @@ void cookbook_fft_lookup(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
       unsigned int m = 1 << s;
       unsigned int m2 = m >> 1;
       std::complex<T> w(1, 0);
-      //std::complex<T> wm = exp(-J * (T(PI) / m2));
       for (unsigned int j = 0; j != m2; ++j) {
          for (int k = j; k < (int)fft_size; k += m) {
-            //std::complex<T> t = w * t_b[k + m2];
+            // Replaced calculation of wm 
+            // (with complex exponentiation) 
+            // and w multiplication with a single table lookup!
             std::complex<T> t = ws[ws_index++] * t_b[k + m2];
             std::complex<T> u = t_b[k];
             t_b[k] = u + t;
             t_b[k + m2] = u - t;
          }
-         // Replace calculation of wm with a lookup
-         //w *= wm;
       }
    } // end of for (int s = 1; s <= log2n; ++s) {
       
