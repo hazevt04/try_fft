@@ -197,12 +197,18 @@ using complex_vec = std::vector<std::complex<T>>;
 
 template<typename T>
 std::pair<bool,int> complex_vecs_close( const complex_vec<T>& lvals, const complex_vec<T>& rvals, const T& max_diff ) {
-
+   
    for( size_t index = 0; index != lvals.size(); ++index ) {
       T abs_diff_real = abs( lvals[index].real() - rvals[index].real() );
       T abs_diff_imag = abs( lvals[index].imag() - rvals[index].imag() );
 
       if ( ( abs_diff_real > max_diff ) || ( abs_diff_imag > max_diff ) ) {
+         std::cout << "MISMATCH:\n"; 
+         std::cout << "lvals[" << index << "] = " << lvals[index] << "\n"; 
+         std::cout << "rvals[" << index << "] = " << rvals[index] << "\n";
+         std::cout << "max_diff = " << max_diff << "\n"; 
+         std::cout << "abs_diff_real = " << abs_diff_real << "\n"; 
+         std::cout << "abs_diff_imag = " << abs_diff_imag << "\n\n"; 
          return std::pair<bool,int>{false,index};
       }
    }

@@ -51,8 +51,6 @@ constexpr double PI = 3.1415926536;
    //}
 //}
 
-template <typename T>
-using complex_vec = std::vector<std::complex<T>>;
 
 template <typename T>
 void cookbook_fft(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
@@ -94,6 +92,50 @@ void cookbook_fft(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
    }
 }
 
+#include "ws.hpp"
+
+template <typename T>
+void cookbook_fft_lookup(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
+
+   complex_vec<T> t_b(b.size(), 0);
+   const std::complex<T> J(0, 1);
+   unsigned int fft_size = 1 << log2n;
+   
+   for (unsigned int i = 0; i != fft_size; ++i) {
+      unsigned int br_index = bit_reverse(i, log2n);
+      t_b[br_index] = a[i];
+   }
+
+   int ws_index = 0;
+   for (int s = 1; s <= log2n; ++s) {
+      unsigned int m = 1 << s;
+      unsigned int m2 = m >> 1;
+      std::complex<T> w(1, 0);
+      //std::complex<T> wm = exp(-J * (T(PI) / m2));
+      for (unsigned int j = 0; j != m2; ++j) {
+         for (int k = j; k < (int)fft_size; k += m) {
+            //std::complex<T> t = w * t_b[k + m2];
+            std::complex<T> t = ws[ws_index++] * t_b[k + m2];
+            std::complex<T> u = t_b[k];
+            t_b[k] = u + t;
+            t_b[k + m2] = u - t;
+         }
+         // Replace calculation of wm with a lookup
+         //w *= wm;
+      }
+   } // end of for (int s = 1; s <= log2n; ++s) {
+      
+   // Swap the halves
+   // "FFT Shift"
+   unsigned int half_fft_size = fft_size >> 1;
+   for(int index = 0; index < fft_size; ++index) {
+      if ( index < (int)half_fft_size ) {
+        b[index] = t_b[index + half_fft_size]; 
+      } else {
+        b[index] = t_b[index - half_fft_size]; 
+      }
+   }
+}
 
 template <typename T>
 void cookbook_fft_debug(complex_vec<T>& a, complex_vec<T>& b, int log2n) {
